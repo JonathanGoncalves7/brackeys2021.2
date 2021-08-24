@@ -23,10 +23,8 @@ public class PlayerController : MonoBehaviour
         playerRB.velocity = new Vector3
             (moveInput.x * moveSpeed, playerRB.velocity.y, moveInput.y * moveSpeed);
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            AbductionRaycast();
-        }
+        AbductionRaycast();
+
         
     }
 
@@ -40,12 +38,22 @@ public class PlayerController : MonoBehaviour
 
         if(Physics.Raycast(ray, out RaycastHit raycastHit))
         {
-            if(raycastHit.transform.tag == "Target")
+            if(raycastHit.transform.tag == "Target" && Input.GetKey(KeyCode.Space))
             {
-                Vector3 targetPos = raycastHit.transform.position;
-                raycastHit.transform.position = Vector3.Lerp(targetPos, origin, 5f * Time.deltaTime);
+                raycastHit.rigidbody.useGravity = false;
+                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, origin, 0.5f * Time.deltaTime);
+
+            }
+            else if (Input.GetKeyUp(KeyCode.Space))
+            {
+                raycastHit.rigidbody.useGravity = true;
             }
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(collision.gameObject);
     }
 
 }
