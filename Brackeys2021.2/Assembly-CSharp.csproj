@@ -56,6 +56,11 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\FMOD\VcaController.cs" />
+>>>>>>> bd3fde2d5ff69f1a8d935994cc7b2081c3bc3618
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.14f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
