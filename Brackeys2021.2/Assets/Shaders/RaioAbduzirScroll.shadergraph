@@ -14,9 +14,6 @@
         },
         {
             "m_Id": "6668e2228b344cd5ab3472d22a142bae"
-        },
-        {
-            "m_Id": "5b97cfa1afc04689a5c231af35a0ae31"
         }
     ],
     "m_Keywords": [],
@@ -1062,29 +1059,6 @@
         "e31": 0.0,
         "e32": 0.0,
         "e33": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "5b97cfa1afc04689a5c231af35a0ae31",
-    "m_Guid": {
-        "m_GuidSerialized": "3030f5c0-9e1b-407d-aba5-0069b726572c"
-    },
-    "m_Name": "Float",
-    "m_DefaultReferenceName": "Vector1_5b97cfa1afc04689a5c231af35a0ae31",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 0.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
     }
 }
 
