@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8406849099673128969}
   - component: {fileID: 8406849099673128971}
   - component: {fileID: 8406849099673128974}
+  - component: {fileID: 1754276624}
   m_Layer: 0
   m_Name: Prop_Horse
   m_TagString: Target
@@ -33,7 +34,7 @@ Transform:
   - {fileID: 7486935310046493593}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8406849099673128971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63,6 +64,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 2, z: 0.2}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1754276624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8406849099673128970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01785cbb504e8e4abfaba0759d2d517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minTimeToStart: 4
+  maxTimeToStart: 8
+  area: {x: 5, y: 20, z: 5}
+  pathAudio: SFX/Gameplay/horse
 --- !u!1 &8547637540048862903
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{f1600af7-c64c-4efc-a9e5-bca184cae758}">
+		<property name="name">
+			<value>Fiddle</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3eea6d89-be5b-46c2-899d-03cc73d3ec52}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3eea6d89-be5b-46c2-899d-03cc73d3ec52}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

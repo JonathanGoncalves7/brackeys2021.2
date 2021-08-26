@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{0c335680-838a-4d44-a371-64bd409f105f}">
+		<property name="name">
+			<value>Power Bar</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c5f6a6eb-8109-40c3-9209-2bf89342aee4}</destination>
+		</relationship>
+	</object>
+</objects>

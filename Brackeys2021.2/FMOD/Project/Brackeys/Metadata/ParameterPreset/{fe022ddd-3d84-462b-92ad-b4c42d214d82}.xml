@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{fe022ddd-3d84-462b-92ad-b4c42d214d82}">
+		<property name="name">
+			<value>No Chaos_Banjo</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7d3e5c2c-b8f5-4378-b9b7-2a0cfc87ece0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7d3e5c2c-b8f5-4378-b9b7-2a0cfc87ece0}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

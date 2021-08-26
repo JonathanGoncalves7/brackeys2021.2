@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{a3402778-4624-4568-b0d3-e6a264bc0377}">
+		<property name="name">
+			<value>Arpeggiator</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cd00608c-05b0-4519-ad03-6bff92991f4d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cd00608c-05b0-4519-ad03-6bff92991f4d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

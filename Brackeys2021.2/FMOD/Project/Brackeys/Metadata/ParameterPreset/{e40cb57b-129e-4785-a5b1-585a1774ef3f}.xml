@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{e40cb57b-129e-4785-a5b1-585a1774ef3f}">
+		<property name="name">
+			<value>Chaos_Bass</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{68964187-66d3-49a4-8b3c-6f8b5aab24d1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{68964187-66d3-49a4-8b3c-6f8b5aab24d1}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

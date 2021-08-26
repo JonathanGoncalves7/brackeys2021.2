@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000165D423E398 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001B4DD64F2C8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,7 +18,91 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          :  (000001B4E2AE1578)
+[LOG] SoundI::release                          :     crow5 (000001B425CE0358)
+[LOG] SoundI::release                          :  (000001B4E2AE1408)
+[LOG] SoundI::release                          :     crow6 (000001B4E2379A38)
+[LOG] SoundI::release                          :  (000001B4E2AE0CD8)
+[LOG] SoundI::release                          :     crow7 (000001B425CDFCD8)
+[LOG] SoundI::release                          :  (000001B4E2AE1298)
+[LOG] SoundI::release                          :     crow1 (000001B4E2379078)
+[LOG] SoundI::release                          :  (000001B449ED57F8)
+[LOG] SoundI::release                          :     crow2 (000001B4284C2548)
+[LOG] SoundI::release                          :  (000001B4E399BC28)
+[LOG] SoundI::release                          :     crow3 (000001B4E237A598)
+[LOG] SoundI::release                          :  (000001B4E399B948)
+[LOG] SoundI::release                          :     crow4 (000001B4284C3DA8)
+[LOG] SoundI::release                          :  (000001B4E399BD98)
+[LOG] SoundI::release                          :     pig3 (000001B4284C38C8)
+[LOG] SoundI::release                          :  (000001B42851E4E8)
+[LOG] SoundI::release                          :     pig4 (000001B4E237A258)
+[LOG] SoundI::release                          :  (000001B42851E378)
+[LOG] SoundI::release                          :     pig5 (000001B4E23796F8)
+[LOG] SoundI::release                          :  (000001B42851E7C8)
+[LOG] SoundI::release                          :     pig6 (000001B4E237A3F8)
+[LOG] SoundI::release                          :  (000001B428F15508)
+[LOG] SoundI::release                          :     pig7 (000001B425CDFB38)
+[LOG] SoundI::release                          :  (000001B4E399B7D8)
+[LOG] SoundI::release                          :     pig8 (000001B4284C3A68)
+[LOG] SoundI::release                          :  (000001B428F157E8)
+[LOG] SoundI::release                          :     pig1 (000001B425CE04F8)
+[LOG] SoundI::release                          :  (000001B42851ED88)
+[LOG] SoundI::release                          :     pig2 (000001B4E2378ED8)
+[LOG] SoundI::release                          :  (000001B42851EAA8)
+[LOG] SoundI::release                          :     chick5 (000001B4E2379898)
+[LOG] SoundI::release                          :  (000001B4E399BAB8)
+[LOG] SoundI::release                          :     chick6 (000001B4284C2888)
+[LOG] SoundI::release                          :  (000001B4E2AE09F8)
+[LOG] SoundI::release                          :     chick7 (000001B425CE1058)
+[LOG] SoundI::release                          :  (000001B428F15398)
+[LOG] SoundI::release                          :     chick8 (000001B425CE01B8)
+[LOG] SoundI::release                          :  (000001B42851E208)
+[LOG] SoundI::release                          :     chick1 (000001B4E2379BD8)
+[LOG] SoundI::release                          :  (000001B428F15C38)
+[LOG] SoundI::release                          :     chick2 (000001B425CDFE78)
+[LOG] SoundI::release                          :  (000001B4E399B218)
+[LOG] SoundI::release                          :     chick3 (000001B4E2379D78)
+[LOG] SoundI::release                          :  (000001B4B23B18C8)
+[LOG] SoundI::release                          :     chick4 (000001B4284C33E8)
+[LOG] SoundI::release                          :  (000001B4E399B0A8)
+[LOG] SoundI::release                          :     horse3 (000001B4284C26E8)
+[LOG] SoundI::release                          :  (000001B4E2AE0B68)
+[LOG] SoundI::release                          :     horse4 (000001B425CDF998)
+[LOG] SoundI::release                          :  (000001B42851EC18)
+[LOG] SoundI::release                          :     horse5 (000001B4E2379F18)
+[LOG] SoundI::release                          :  (000001B42851E938)
+[LOG] SoundI::release                          :     horse6 (000001B4E237A738)
+[LOG] SoundI::release                          :  (000001B4E399B4F8)
+[LOG] SoundI::release                          :     horse7 (000001B4284C2D68)
+[LOG] SoundI::release                          :  (000001B4E2AE0E48)
+[LOG] SoundI::release                          :     horse8 (000001B4E2379218)
+[LOG] SoundI::release                          :  (000001B4E2AE0FB8)
+[LOG] SoundI::release                          :     horse1 (000001B4E23793B8)
+[LOG] SoundI::release                          :  (000001B4E2AE0888)
+[LOG] SoundI::release                          :     horse2 (000001B425CE0EB8)
+[LOG] SoundI::release                          :  (000001B4E399B388)
+[LOG] SoundI::release                          :     cow5 (000001B4284C3C08)
+[LOG] SoundI::release                          :  (000001B428F15958)
+[LOG] SoundI::release                          :     cow6 (000001B425CE0D18)
+[LOG] SoundI::release                          :  (000001B4E2AE1128)
+[LOG] SoundI::release                          :     cow7 (000001B4E2379558)
+[LOG] SoundI::release                          :  (000001B428F15228)
+[LOG] SoundI::release                          :     cow8 (000001B425CDF7F8)
+[LOG] SoundI::release                          :  (000001B42851E658)
+[LOG] SoundI::release                          :     cow1 (000001B4E237A0B8)
+[LOG] SoundI::release                          :  (000001B4E399B668)
+[LOG] SoundI::release                          :     cow2 (000001B4E237A8D8)
+[LOG] SoundI::release                          :  (000001B42851E098)
+[LOG] SoundI::release                          :     cow3 (000001B4E2378D38)
+[LOG] SoundI::release                          :  (000001B428F15678)
+[LOG] SoundI::release                          :     cow4 (000001B425CE0838)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
