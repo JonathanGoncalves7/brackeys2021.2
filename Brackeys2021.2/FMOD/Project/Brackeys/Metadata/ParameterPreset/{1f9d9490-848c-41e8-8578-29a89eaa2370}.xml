@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{1f9d9490-848c-41e8-8578-29a89eaa2370}">
+		<property name="name">
+			<value>Chaos_Perc</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{899e6abc-b27d-4c56-827b-1833924c911c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{899e6abc-b27d-4c56-827b-1833924c911c}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

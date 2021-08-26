@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 888321409589623755}
   - component: {fileID: 888321409589623753}
   - component: {fileID: 888321409589623756}
+  - component: {fileID: 112206840973960382}
   m_Layer: 0
   m_Name: Prop_Pig
   m_TagString: Target
@@ -63,6 +64,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &112206840973960382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888321409589623752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01785cbb504e8e4abfaba0759d2d517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minTimeToStart: 4
+  maxTimeToStart: 8
+  area: {x: 5, y: 5, z: 5}
+  pathAudio: SFX/Gameplay/pig
 --- !u!1 &1877064207093616332
 GameObject:
   m_ObjectHideFlags: 0

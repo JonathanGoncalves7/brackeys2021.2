@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{7176807f-6a8a-42a2-a853-37579c7ab09d}">
+		<property name="name">
+			<value>Recovering Power</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{8f350459-51fc-42b1-9286-c68712fc8ade}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{8f350459-51fc-42b1-9286-c68712fc8ade}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

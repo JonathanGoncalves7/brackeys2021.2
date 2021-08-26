@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{ed1d1fd6-92ea-4f68-a990-09bd69c39bd2}">
+		<property name="name">
+			<value>Chaos_Harmonica</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{7cfee6a9-ee5c-40b6-b621-c639296dcd5a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{7cfee6a9-ee5c-40b6-b621-c639296dcd5a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1</value>
+		</property>
+	</object>
+</objects>
