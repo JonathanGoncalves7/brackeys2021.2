@@ -6,8 +6,14 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRB;
     public float moveSpeed;
+    public float castingRadius;
+    public Transform raycastOrigin;
+    public GameObject currentHitObject;
 
     private Vector2 moveInput;
+
+    private Vector3 origin;
+    private Vector3 direction;
 
     private void Start()
     {
@@ -30,31 +36,38 @@ public class PlayerController : MonoBehaviour
 
     void AbductionRaycast()
     {
-        Vector3 origin = transform.position;
-        Vector3 direction = Vector3.down;
+        origin = raycastOrigin.position;
+        direction = Vector3.down;
+        RaycastHit raycastHit;
 
         Debug.DrawRay(origin, direction * moveSpeed, Color.red);
-        Ray ray = new Ray(origin, direction);
 
-        if(Physics.Raycast(ray, out RaycastHit raycastHit))
+        if(Physics.SphereCast(origin, castingRadius, direction, out raycastHit))
         {
-            if(raycastHit.transform.tag == "Target" && Input.GetKey(KeyCode.Space))
+            currentHitObject = raycastHit.transform.gameObject;
+            if (currentHitObject.tag == "Target" && Input.GetKey(KeyCode.Space))
             {
+                
                 raycastHit.rigidbody.useGravity = false;
-                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, origin, 0.5f * Time.deltaTime);
-
+                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, transform.position, 0.5f * Time.deltaTime);
+                Debug.Log(raycastHit.transform.name);
             }
             else if (Input.GetKeyUp(KeyCode.Space))
             {
                 raycastHit.rigidbody.useGravity = true;
             }
+
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Encostou em: " + collision.gameObject);
-        //Destroy(collision.gameObject);
+        
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(origin, castingRadius);
+    }
 }
