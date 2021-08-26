@@ -95,6 +95,9 @@
 		<property name="length">
 			<value>1.1289791666666666</value>
 		</property>
+		<property name="pitch">
+			<value>-6</value>
+		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{2a6541d2-9e1c-4d6c-bead-0cc74c0855c1}</destination>
 		</relationship>
@@ -134,6 +137,7 @@
 	<object class="MixerBusEffectChain" id="{32e24963-06b5-4cb3-9899-d8b6157985c4}">
 		<relationship name="effects">
 			<destination>{1f4e48c5-a083-4842-98ee-1bbc30a7b599}</destination>
+			<destination>{d02d3b84-c386-4ac4-949b-373130623753}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8227145b-d033-42c1-89c5-d366e7810a20}" />
@@ -158,4 +162,15 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{1f4e48c5-a083-4842-98ee-1bbc30a7b599}" />
+	<object class="DelayEffect" id="{d02d3b84-c386-4ac4-949b-373130623753}">
+		<property name="delay">
+			<value>100</value>
+		</property>
+		<property name="feedback">
+			<value>58.7999992</value>
+		</property>
+		<property name="level">
+			<value>-3.5</value>
+		</property>
+	</object>
 </objects>

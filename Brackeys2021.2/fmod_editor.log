@@ -2,12 +2,13 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20111 (118066), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001B5B4F142E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000028390ECA9A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +19,54 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          : Banjo1 (0000028458740868)
+[LOG] SoundI::release                          :     Banjo1 (00000283944FBD48)
+[LOG] SoundI::release                          :     Banjo1 (0000028458746898)
+[LOG] SoundI::release                          : Cowbell (0000028458740358)
+[LOG] SoundI::release                          :     Cowbell (00000283944F8E28)
+[LOG] SoundI::release                          :     Cowbell (0000028458743E68)
+[LOG] SoundI::release                          : Chaos Drums (000002845873BC78)
+[LOG] SoundI::release                          :     Chaos Drums (00000283944F8128)
+[LOG] SoundI::release                          :     Chaos Drums (0000028458744D98)
+[LOG] SoundI::release                          : Normal (000002845873CD58)
+[LOG] SoundI::release                          :     Normal (00000283944FBEE8)
+[LOG] SoundI::release                          :     Normal (00000284587457B8)
+[LOG] SoundI::release                          : Perc (000002845873FC98)
+[LOG] SoundI::release                          :     Perc (00000283944F82C8)
+[LOG] SoundI::release                          :     Perc (0000028458746DA8)
+[LOG] SoundI::release                          : Chaos Harmonica (0000028458741798)
+[LOG] SoundI::release                          :     Chaos Harmonica (00000283944FA008)
+[LOG] SoundI::release                          :     Chaos Harmonica (00000284587426C8)
+[LOG] SoundI::release                          : Chaos Banjo (000002845873C338)
+[LOG] SoundI::release                          :     Chaos Banjo (00000284584BB538)
+[LOG] SoundI::release                          :     Chaos Banjo (00000284587486F8)
+[LOG] SoundI::release                          : Fiddle (000002845873F428)
+[LOG] SoundI::release                          :     Fiddle (00000284584BAEB8)
+[LOG] SoundI::release                          :     Fiddle (0000028458744F48)
+[LOG] SoundI::release                          : Bass (000002845873EBB8)
+[LOG] SoundI::release                          :     Bass (00000284584BAD18)
+[LOG] SoundI::release                          :     Bass (0000028458744A38)
+[LOG] SoundI::release                          : Harmonica (000002845873D778)
+[LOG] SoundI::release                          :     Harmonica (00000284584BAB78)
+[LOG] SoundI::release                          :     Harmonica (0000028458746028)
+[LOG] SoundI::release                          : Drums (00000284587406B8)
+[LOG] SoundI::release                          :     Drums (00000284584BA9D8)
+[LOG] SoundI::release                          :     Drums (000002845873D418)
+[LOG] SoundI::release                          : Chaos Bass (000002845873EA08)
+[LOG] SoundI::release                          :     Chaos Bass (00000284584BA838)
+[LOG] SoundI::release                          :     Chaos Bass (000002845873CF08)
+[LOG] SoundI::release                          : farm_ambience (000002845873D268)
+[LOG] SoundI::release                          :     farm_ambience (00000283944FB6C8)
+[LOG] SoundI::release                          :     farm_ambience (0000028458745CC8)
+[LOG] SoundI::release                          :  (0000028348009458)
+[LOG] SoundI::release                          :     ship_moves (00000284584BB058)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

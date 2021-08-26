@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{b3c1f8b0-f0e7-4ae5-b6f1-ce508064e1ad}">
+		<property name="name">
+			<value>ship_moves</value>
+		</property>
+		<relationship name="folder">
+			<destination>{18c123ea-96ae-481e-8d60-8924c740bc45}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e132bbb1-676b-4759-afd8-27e711748cc5}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e132bbb1-676b-4759-afd8-27e711748cc5}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>7</value>
+		</property>
+	</object>
+</objects>
