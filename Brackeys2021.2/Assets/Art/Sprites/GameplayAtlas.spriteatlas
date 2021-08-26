@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GameplayAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Standalone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 25
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: WebGL
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 12
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 5ec93e29823626341a5275883d7bd8b7, type: 3}
+    totalSpriteSurfaceArea: 1139516
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 458a5091840e2e848a780b69d7f7f169, type: 3}
+  - {fileID: 21300000, guid: 2f6fc543ff1d24a44aa722000391bde0, type: 3}
+  - {fileID: 21300000, guid: a8c4b3a615bf7664b85b54c33076eda6, type: 3}
+  - {fileID: 21300000, guid: a242776759f55f94eb3c125e435703bc, type: 3}
+  - {fileID: 21300000, guid: 0a062da78a978f24ea0b4f1d95718cdf, type: 3}
+  - {fileID: 21300000, guid: 45a490997f97daa42842521a47964648, type: 3}
+  - {fileID: 21300000, guid: 79dff41ae0f272142a72d4369c3ea42d, type: 3}
+  - {fileID: 21300000, guid: 2d6dce7b836faa84789467d59e84c179, type: 3}
+  - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
+  - {fileID: 21300000, guid: 4d9b1ccc71bac75449d82f0e2286f3ab, type: 3}
+  - {fileID: 21300000, guid: 65ce6f9d5cb8b5b45a6b086104606ee3, type: 3}
+  - {fileID: 21300000, guid: 1c4b1fed89055034fb8ae40a6b46e4b2, type: 3}
+  - {fileID: 21300000, guid: 1eac4e5fe50a44144a4d1c4f71bedd4b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Galinheiro
+  - Pig
+  - Cow01
+  - Horse
+  - CrowStand_PlaceHolder
+  - Chicken
+  - Ufo
+  - Stable
+  - Billboard
+  - CrowFlying_PlaceHolder
+  - Farmer
+  - Fence1
+  - blob
+  m_RenderDataMap: {}
+  m_Tag: GameplayAtlas
+  m_IsVariant: 0
