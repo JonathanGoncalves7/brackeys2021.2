@@ -9937,6 +9937,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 821613214927544878, guid: 95430fa1142da9a438691382ea09af04, type: 3}
   m_PrefabInstance: {fileID: 1243903628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1249238906 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6750704817303054738, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+  m_PrefabInstance: {fileID: 7992725098436146}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1258841193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19189,6 +19200,10 @@ PrefabInstance:
       propertyPath: caosSlider
       value: 
       objectReference: {fileID: 595032834}
+    - target: {fileID: 283445861384005633, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: abducaoSlider
+      value: 
+      objectReference: {fileID: 1249238906}
     - target: {fileID: 283445861384005633, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: castingRadius
       value: 2

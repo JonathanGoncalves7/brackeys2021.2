@@ -16,13 +16,14 @@ public class PlayerController : MonoBehaviour
     private Vector3 origin;
     private Vector3 direction;
 
-    public Slider caosSlider;
-    private float caosSliderFloat;
+    public Slider caosSlider, abducaoSlider;
+    private float caosSliderFloat, abducaoSliderFloat;
 
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
         caosSliderFloat = 0f;
+        abducaoSliderFloat = 1f;
     }
 
     void Update()
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         AbductionRaycast();
 
         caosSlider.value = caosSliderFloat;
+        abducaoSlider.value = abducaoSliderFloat;
         
         
     }
@@ -74,6 +76,7 @@ public class PlayerController : MonoBehaviour
             
             Destroy(collision.gameObject);
             caosSliderFloat += 0.1f;
+            abducaoSliderFloat -= 0.1f;
         }
         
     }
