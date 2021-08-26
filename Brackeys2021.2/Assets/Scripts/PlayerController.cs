@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,12 +16,16 @@ public class PlayerController : MonoBehaviour
     private Vector3 origin;
     private Vector3 direction;
 
-    private void Start()
+    public Slider caosSlider;
+    private float caosSliderFloat;
+
+    void Start()
     {
         playerRB = GetComponent<Rigidbody>();
+        caosSliderFloat = 0f;
     }
 
-    private void Update()
+    void Update()
     {
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
@@ -31,6 +36,8 @@ public class PlayerController : MonoBehaviour
 
         AbductionRaycast();
 
+        caosSlider.value = caosSliderFloat;
+        
         
     }
 
@@ -62,6 +69,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.transform.gameObject.tag == "Target")
+        {
+            
+            Destroy(collision.gameObject);
+            caosSliderFloat += 0.1f;
+        }
         
     }
 

@@ -4204,6 +4204,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 821613214927544878, guid: 95430fa1142da9a438691382ea09af04, type: 3}
   m_PrefabInstance: {fileID: 590133923}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &595032834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3023253113738470231, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+  m_PrefabInstance: {fileID: 7992725098436146}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &597694408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19147,8 +19158,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7992725608949583, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Radius
+      value: 1.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992725608949583, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992725608949583, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Center.x
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992725608949583, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Center.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992725608949583, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Center.z
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 7992725753855120, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_Enabled
@@ -19158,6 +19185,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 283445861384005633, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: caosSlider
+      value: 
+      objectReference: {fileID: 595032834}
     - target: {fileID: 283445861384005633, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: castingRadius
       value: 2
@@ -19190,6 +19221,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3023253113738470231, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3664173816823630488, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_Camera
       value: 
@@ -19213,6 +19248,10 @@ PrefabInstance:
     - target: {fileID: 6495392250243389791, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750704817303054738, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021d8269b4056c74997daba27d97319f, type: 3}
@@ -19557,6 +19596,10 @@ PrefabInstance:
     - target: {fileID: 4541397798736648998, guid: fe02fa4b9c514354e9836ce9c7abe5da, type: 3}
       propertyPath: m_Name
       value: Prop_Hennery
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541397798736648998, guid: fe02fa4b9c514354e9836ce9c7abe5da, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe02fa4b9c514354e9836ce9c7abe5da, type: 3}
