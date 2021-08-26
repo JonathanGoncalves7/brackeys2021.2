@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01785cbb504e8e4abfaba0759d2d517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToStart: 2
-  area: {x: 5, y: 20, z: 5}
+  minTimeToStart: 4
+  maxTimeToStart: 8
+  area: {x: 5, y: 5, z: 5}
   pathAudio: SFX/Gameplay/crow

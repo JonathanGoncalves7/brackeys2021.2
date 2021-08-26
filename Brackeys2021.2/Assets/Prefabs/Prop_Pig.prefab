@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minTimeToStart: 4
   maxTimeToStart: 8
-  area: {x: 5, y: 20, z: 5}
+  area: {x: 5, y: 5, z: 5}
   pathAudio: SFX/Gameplay/pig
 --- !u!1 &1877064207093616332
 GameObject:
