@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 7992725608949583}
   - component: {fileID: 7992725608949582}
   - component: {fileID: 5797937667341578023}
+  - component: {fileID: 3003648287996672460}
   m_Layer: 0
   m_Name: Player_UFO
   m_TagString: Player
@@ -259,6 +260,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
   ListenerNumber: -1
+--- !u!114 &3003648287996672460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992725608949577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Gameplay/ship_moves
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &7992725753855122
 GameObject:
   m_ObjectHideFlags: 0
