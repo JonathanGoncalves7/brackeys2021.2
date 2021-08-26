@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/00_Start.unity
-    guid: 952c6d821afaddb4dbd2db78cbf00dc7
+    guid: c23040f61fc025944b5d64c81283feaf
   - enabled: 1
     path: Assets/Scenes/01_ Fazenda.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
