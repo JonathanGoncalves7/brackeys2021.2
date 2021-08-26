@@ -53,7 +53,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
+        Debug.Log("Encostou em: " + collision.gameObject);
+        //Destroy(collision.gameObject);
     }
 
 }
