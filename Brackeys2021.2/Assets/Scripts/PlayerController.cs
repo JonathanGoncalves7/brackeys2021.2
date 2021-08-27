@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
         Debug.DrawRay(origin, direction * moveSpeed, Color.red);
 
-        if(Physics.SphereCast(origin, castingRadius, direction, out raycastHit))
+        if(Physics.SphereCast(origin, castingRadius, direction, out raycastHit) && abducaoSliderFloat > 0)
         {
             currentHitObject = raycastHit.transform.gameObject;
             if (currentHitObject.tag == "Target" && Input.GetKey(KeyCode.Space))
