@@ -5,18 +5,28 @@ using UnityEngine.AI;
 
 public class WaypointWalker : MonoBehaviour
 {
-    [SerializeField] private float walkCooldown = 2f;
+    [SerializeField] private float walkCooldown = 5f;
+    [SerializeField] [Range(0, 95)] private int percentageWalkCooldownMaximumChaos = 75;
     [SerializeField] private float restWalkCooldown = 0f;
     [SerializeField] private Waypoints waypoints;
 
     private int currentWaypoint;
     private NavMeshAgent agent;
     private Rigidbody rb;
+    private PlayerController playerController;
+
+
+    float GetWalkCooldown()
+    {
+        float currentCaosPoints = playerController.GetCaosPoints();
+        return walkCooldown - (walkCooldown * (percentageWalkCooldownMaximumChaos * currentCaosPoints / 100));
+    }
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         agent.autoBraking = true;
 
@@ -53,7 +63,7 @@ public class WaypointWalker : MonoBehaviour
 
         if (restWalkCooldown <= 0)
         {
-            restWalkCooldown = walkCooldown;
+            restWalkCooldown = GetWalkCooldown();
             currentWaypoint = Random.Range(0, waypoints.waypoints.Count);
             agent.destination = waypoints.waypoints[currentWaypoint].transform.position;
         }

@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 direction;
 
     public Slider caosSlider, abducaoSlider;
-    private float caosSliderFloat, abducaoSliderFloat;
+    [SerializeField] private float caosSliderFloat, abducaoSliderFloat;
 
     [SerializeField]
     private float velocidadeAbducao;
@@ -52,6 +52,11 @@ public class PlayerController : MonoBehaviour
 
         if (abducaoSliderFloat <= 0)
             abducaoSliderFloat = 0;
+    }
+
+    public float GetCaosPoints()
+    {
+        return caosSliderFloat;
     }
 
 
