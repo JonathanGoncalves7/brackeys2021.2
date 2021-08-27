@@ -153,7 +153,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 79dff41ae0f272142a72d4369c3ea42d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2c12dbc5d6829c478065e97ed6b7f7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 5797937667341578023}
   - component: {fileID: 3003648287996672460}
   - component: {fileID: 283445861384005633}
+  - component: {fileID: 9169644557662035868}
   m_Layer: 0
   m_Name: Player_UFO
   m_TagString: Player
@@ -287,6 +288,31 @@ MonoBehaviour:
   castingRadius: 0
   raycastOrigin: {fileID: 1576437000555731588}
   currentHitObject: {fileID: 0}
+  caosSlider: {fileID: 3023253113738470231}
+  abducaoSlider: {fileID: 6750704817303054738}
+--- !u!114 &9169644557662035868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992725608949577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/Gameplay/Ambience
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &7992725753855122
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +432,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7476898017706176128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926910870831989302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a65a8a8bd7a764394735d6a6010878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rend: {fileID: 1719795574708642787}
+  sortingLayerName: Default
+  orderInLayer: 10
 --- !u!1 &1070261076603566770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,5 +1453,15 @@ PrefabInstance:
 --- !u!4 &546866478538021004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
+  m_PrefabInstance: {fileID: 7992725000339303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1719795574708642787 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
+  m_PrefabInstance: {fileID: 7992725000339303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &926910870831989302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
   m_PrefabInstance: {fileID: 7992725000339303}
   m_PrefabAsset: {fileID: 0}
