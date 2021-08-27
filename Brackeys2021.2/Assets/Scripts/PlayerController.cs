@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public Slider caosSlider, abducaoSlider;
     private float caosSliderFloat, abducaoSliderFloat;
 
+    [SerializeField]
+    private float velocidadeAbducao;
+
     public void AddCaosPoints(float value)
     {
         caosSliderFloat += value;
@@ -91,7 +94,7 @@ public class PlayerController : MonoBehaviour
             {
 
                 raycastHit.rigidbody.useGravity = false;
-                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, transform.position, 0.5f * Time.deltaTime);
+                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, origin, velocidadeAbducao * Time.deltaTime);
                 Debug.Log(raycastHit.transform.name);
             }
             else if (Input.GetKeyUp(KeyCode.Space))
