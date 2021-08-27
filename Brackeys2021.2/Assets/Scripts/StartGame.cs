@@ -7,17 +7,20 @@ public class StartGame : MonoBehaviour
 {
     [SerializeField] int sceneID = 0;
     [SerializeField] GameObject button;
+    [SerializeField] GameObject button2;
 
     [Header("Animations")]
     [SerializeField] Animation fadeAnimation;
     [SerializeField] AnimationClip fadeInClip;
     [SerializeField] AnimationClip fadeOutClip;
 
-    public void OnStartClick()
+    public void OnStartClick(int index)
     {
         button.SetActive(false);
+        button2.SetActive(false);
         DontDestroyOnLoad(gameObject);
 
+        sceneID = index;
         StartCoroutine(LoadSceneAsync());
     }
 
@@ -26,7 +29,7 @@ public class StartGame : MonoBehaviour
         fadeAnimation.clip = fadeInClip;
         fadeAnimation.Play();
 
-        yield return new WaitForSeconds(.8f);
+        yield return new WaitForSeconds(.5f);
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneID);
 
