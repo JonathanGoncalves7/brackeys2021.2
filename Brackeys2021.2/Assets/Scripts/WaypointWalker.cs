@@ -11,17 +11,33 @@ public class WaypointWalker : MonoBehaviour
 
     private int currentWaypoint;
     private NavMeshAgent agent;
+    private Rigidbody rb;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
+
         agent.autoBraking = true;
 
         restWalkCooldown = Random.Range(0, walkCooldown);
     }
 
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            agent.enabled = true;
+        }
+    }
+
     private void Update()
     {
+        if (!rb.useGravity)
+        {
+            agent.enabled = false;
+        }
+
         if (!waypoints)
             return;
 
