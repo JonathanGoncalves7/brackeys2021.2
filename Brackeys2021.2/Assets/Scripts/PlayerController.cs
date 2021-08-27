@@ -19,6 +19,39 @@ public class PlayerController : MonoBehaviour
     public Slider caosSlider, abducaoSlider;
     private float caosSliderFloat, abducaoSliderFloat;
 
+    public void AddCaosPoints(float value)
+    {
+        caosSliderFloat += value;
+
+        if (caosSliderFloat > 1)
+            caosSliderFloat = 1;
+    }
+
+    public void SubCaosPoints(float value)
+    {
+        caosSliderFloat -= value;
+
+        if (caosSliderFloat <= 0)
+            caosSliderFloat = 0;
+    }
+
+    public void AddAbducaoPoints(float value)
+    {
+        abducaoSliderFloat += value;
+
+        if (abducaoSliderFloat > 1)
+            abducaoSliderFloat = 1;
+    }
+
+    public void SubAbducaoPoints(float value)
+    {
+        abducaoSliderFloat -= value;
+
+        if (abducaoSliderFloat <= 0)
+            abducaoSliderFloat = 0;
+    }
+
+
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
@@ -39,8 +72,8 @@ public class PlayerController : MonoBehaviour
 
         caosSlider.value = caosSliderFloat;
         abducaoSlider.value = abducaoSliderFloat;
-        
-        
+
+
     }
 
     void AbductionRaycast()
@@ -51,12 +84,12 @@ public class PlayerController : MonoBehaviour
 
         Debug.DrawRay(origin, direction * moveSpeed, Color.red);
 
-        if(Physics.SphereCast(origin, castingRadius, direction, out raycastHit) && abducaoSliderFloat > 0)
+        if (Physics.SphereCast(origin, castingRadius, direction, out raycastHit) && abducaoSliderFloat > 0)
         {
             currentHitObject = raycastHit.transform.gameObject;
             if (currentHitObject.tag == "Target" && Input.GetKey(KeyCode.Space))
             {
-                
+
                 raycastHit.rigidbody.useGravity = false;
                 raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, transform.position, 0.5f * Time.deltaTime);
                 Debug.Log(raycastHit.transform.name);
@@ -71,14 +104,14 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.transform.gameObject.tag == "Target")
+        if (collision.transform.gameObject.tag == "Target")
         {
-            
+
             Destroy(collision.gameObject);
             caosSliderFloat += 0.1f;
             abducaoSliderFloat -= 0.1f;
         }
-        
+
     }
 
     private void OnDrawGizmosSelected()
