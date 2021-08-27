@@ -245,7 +245,7 @@ MonoBehaviour:
   minTimeToStart: 4
   maxTimeToStart: 8
   area: {x: 5, y: 5, z: 5}
-  pathAudio: SFX/Gameplay/cow
+  pathAudio: SFX/Gameplay/duck
 --- !u!114 &4322263176345504545
 MonoBehaviour:
   m_ObjectHideFlags: 0
