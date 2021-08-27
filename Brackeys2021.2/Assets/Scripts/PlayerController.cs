@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
         abducaoSliderFloat = 1f;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
@@ -94,10 +94,10 @@ public class PlayerController : MonoBehaviour
             {
 
                 raycastHit.rigidbody.useGravity = false;
-                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, origin, velocidadeAbducao * Time.deltaTime);
+                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, origin, velocidadeAbducao * Time.fixedDeltaTime);
                 Debug.Log(raycastHit.transform.name);
             }
-            else if (Input.GetKeyUp(KeyCode.Space))
+            else if (Input.GetKeyUp(KeyCode.Space) && raycastHit.rigidbody != null)
             {
                 raycastHit.rigidbody.useGravity = true;
             }
