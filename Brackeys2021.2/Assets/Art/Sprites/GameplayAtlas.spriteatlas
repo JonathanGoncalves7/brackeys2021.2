@@ -27,7 +27,7 @@ SpriteAtlas:
       m_ResizeAlgorithm: 0
       m_TextureFormat: 25
       m_TextureCompression: 1
-      m_CompressionQuality: 50
+      m_CompressionQuality: 100
       m_CrunchedCompression: 0
       m_AllowsAlphaSplitting: 0
       m_Overridden: 1
@@ -56,28 +56,33 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 5ec93e29823626341a5275883d7bd8b7, type: 3}
-    totalSpriteSurfaceArea: 2126692
+    totalSpriteSurfaceArea: 3033755
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: c9f596b04a4f5434ca51f22004ae51c2, type: 3}
+  - {fileID: 21300000, guid: 4c4083c0a3e184d488572f139af410ee, type: 3}
   - {fileID: 21300000, guid: 0f5d1c314b2043c4bbdaa10fb0bdcd03, type: 3}
   - {fileID: 21300000, guid: 339844819da7f0c4d8518cdb381e5f6d, type: 3}
   - {fileID: 21300000, guid: 458a5091840e2e848a780b69d7f7f169, type: 3}
   - {fileID: 21300000, guid: 53ba70d15752a124c80acdac26ea45af, type: 3}
+  - {fileID: 21300000, guid: eb898372022923d46a00ee51c1b59037, type: 3}
   - {fileID: 21300000, guid: 2f6fc543ff1d24a44aa722000391bde0, type: 3}
   - {fileID: 21300000, guid: f3297f44bbdd3e54c923fec3bffffe16, type: 3}
   - {fileID: 21300000, guid: 61b0d5d503122504c8fbccbe02601b7a, type: 3}
+  - {fileID: 21300000, guid: ca550826957d5da44891cd61cb4f7400, type: 3}
   - {fileID: 21300000, guid: a8c4b3a615bf7664b85b54c33076eda6, type: 3}
   - {fileID: 21300000, guid: a242776759f55f94eb3c125e435703bc, type: 3}
   - {fileID: 21300000, guid: 0a062da78a978f24ea0b4f1d95718cdf, type: 3}
+  - {fileID: 21300000, guid: 4fbf3138359bcc546bffa08990193015, type: 3}
   - {fileID: 21300000, guid: ec347c090868f8e45abf63c229d2db70, type: 3}
   - {fileID: 21300000, guid: 2c424279dc27abc4e98b1e8f5d86b7ae, type: 3}
   - {fileID: 21300000, guid: 45a490997f97daa42842521a47964648, type: 3}
   - {fileID: 21300000, guid: c12522c99e37b4a40b89b97ebe6ce793, type: 3}
-  - {fileID: 21300000, guid: 79dff41ae0f272142a72d4369c3ea42d, type: 3}
+  - {fileID: 21300000, guid: 10edebaa71611914aa631ce12c17b620, type: 3}
+  - {fileID: 21300000, guid: 50d8d0ca4224ea24e86631c3304a1892, type: 3}
   - {fileID: 21300000, guid: 2d6dce7b836faa84789467d59e84c179, type: 3}
   - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
   - {fileID: 21300000, guid: de5084bb5e49e5443834f411d9bbfbeb, type: 3}
@@ -93,21 +98,26 @@ SpriteAtlas:
   - {fileID: 21300000, guid: f0c202dfd0a26d344b78e280d2d45f13, type: 3}
   m_PackedSpriteNamesToIndex:
   - HUD_Bar_Chaos
+  - Duck01
   - fadeTop
   - BrakeysVilleLogo
   - Galinheiro
   - HUD_Bar_Abduction
+  - Bush
   - Pig
   - Tree2
   - Tree
+  - Pig2
   - Cow01
   - Horse
   - CrowStand_PlaceHolder
+  - Trunk
   - HUD_Bar_Fill
   - BillBoard4_PlaceHolder
   - Chicken
   - fade
-  - Ufo
+  - Lake
+  - Duck02
   - Stable
   - Billboard
   - BillBoard2_PlaceHolder
