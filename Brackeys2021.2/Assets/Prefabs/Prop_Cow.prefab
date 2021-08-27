@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2568898286647973066}
   - component: {fileID: 2568898286647973071}
   - component: {fileID: 4421414319702685818}
+  - component: {fileID: -1472308173018831972}
+  - component: {fileID: -6268633992309515511}
   m_Layer: 0
   m_Name: Prop_Cow
   m_TagString: Target
@@ -80,6 +82,43 @@ MonoBehaviour:
   maxTimeToStart: 8
   area: {x: 5, y: 5, z: 5}
   pathAudio: SFX/Gameplay/cow
+--- !u!114 &-1472308173018831972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568898286647973067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40486259696e449078e8240ac8f97798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkCooldown: 2
+  restWalkCooldown: 0
+  waypoints: {fileID: 0}
+--- !u!195 &-6268633992309515511
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2568898286647973067}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 0
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3889376215242367439
 GameObject:
   m_ObjectHideFlags: 0

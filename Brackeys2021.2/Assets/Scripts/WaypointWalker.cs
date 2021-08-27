@@ -1,49 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WaypointWalker : MonoBehaviour
 {
+    [SerializeField] private float walkCooldown = 2f;
+    [SerializeField] private float restWalkCooldown = 0f;
+    [SerializeField] private Waypoints waypoints;
+
     private int currentWaypoint;
-    [SerializeField] private float speed = 0.5f;
-    private float waypointRadius;
-    private float walkCooldown = 2;
-    private Waypoints waypoints;
-    private bool isWalking;
+    private NavMeshAgent agent;
 
     void Start()
     {
-        waypoints = FindObjectOfType<Waypoints>().GetComponent<Waypoints>();
-        StartCoroutine("Walking");
-        isWalking = false;
+        agent = GetComponent<NavMeshAgent>();
+        agent.autoBraking = true;
 
+        restWalkCooldown = Random.Range(0, walkCooldown);
     }
 
-
-
-    public IEnumerator Walking()
+    private void Update()
     {
-        yield return new WaitForSeconds(walkCooldown);
+        if (!waypoints)
+            return;
 
+        Walking();
+    }
 
-        int maxRandomNumber = waypoints.waypointsCercadinho1.Length;
-        int randomWaypoint = Random.Range(0, maxRandomNumber);
-
-
-        
-        if (randomWaypoint <= waypoints.waypointsCercadinho1.Length && isWalking == false)
+    void Walking()
+    {
+        if (isDestination())
         {
-            currentWaypoint = randomWaypoint;
-            while (Vector3.Distance(transform.position, waypoints.waypointsCercadinho1[currentWaypoint].transform.position) > 0.5f)
-            {
-                isWalking = true;
-                transform.position = Vector3.Lerp(transform.position, waypoints.waypointsCercadinho1[currentWaypoint].transform.position,speed * Time.deltaTime);
-
-            }
-            isWalking = false;
-            StartCoroutine("Walking");  
+            restWalkCooldown -= Time.deltaTime;
         }
 
+        if (restWalkCooldown <= 0)
+        {
+            restWalkCooldown = walkCooldown;
+            currentWaypoint = Random.Range(0, waypoints.waypoints.Count);
+            agent.destination = waypoints.waypoints[currentWaypoint].transform.position;
+        }
+    }
 
+    bool isDestination()
+    {
+        return agent.remainingDistance < 0.5f;
     }
 }
