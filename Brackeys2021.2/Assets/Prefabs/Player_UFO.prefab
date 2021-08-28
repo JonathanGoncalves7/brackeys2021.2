@@ -294,6 +294,7 @@ MonoBehaviour:
   abducaoPoints: 1
   abducaoPointsPerdidoPorAbducao: 0.1
   abducaoSlider: {fileID: 6750704817303054738}
+  abducaoAnim: {fileID: 4167157318382842664}
 --- !u!114 &9169644557662035868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5909657053493040425}
   - component: {fileID: 6750704817303054738}
+  - component: {fileID: 4167157318382842664}
   m_Layer: 5
   m_Name: Barra_Abducao
   m_TagString: Untagged
@@ -846,6 +848,23 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!111 &4167157318382842664
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273897199091526977}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 2a7d7006904b4794688d95835c33b5d5, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2a7d7006904b4794688d95835c33b5d5, type: 2}
+  - {fileID: 7400000, guid: 03b4edf24c6c2c14cacea0719402d08d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &3999380877551136671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1290,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 11
   m_TargetDisplay: 0
 --- !u!114 &3034648705341594599
 MonoBehaviour:
@@ -1560,6 +1579,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
+--- !u!1 &926910870831989302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
+  m_PrefabInstance: {fileID: 7992725000339303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1719795574708642787 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
@@ -1568,10 +1592,5 @@ MeshRenderer:
 --- !u!4 &546866478538021004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
-  m_PrefabInstance: {fileID: 7992725000339303}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &926910870831989302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b32b372e5f1208b49af9b5eadf45737b, type: 3}
   m_PrefabInstance: {fileID: 7992725000339303}
   m_PrefabAsset: {fileID: 0}

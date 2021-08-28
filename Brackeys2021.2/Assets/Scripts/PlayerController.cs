@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float abducaoPoints = 1;
     [SerializeField] private float abducaoPointsPerdidoPorAbducao = 0.1f;
     [SerializeField] private Slider abducaoSlider;
+    [SerializeField] private Animation abducaoAnim;
+
+    //private readonly string anim_abducao_idle = "anim_Abduction_Idle";
+    private readonly string anim_abducao_dropping = "anim_Abduction_Using";
 
     private Rigidbody playerRB;
 
@@ -55,6 +59,7 @@ public class PlayerController : MonoBehaviour
 
             CaosManager.Instance.AddCaosPoints(CaosManager.Instance.GetCaosPointsAdicionadoPorAbducao());
             SubAbducaoPoints(abducaoPointsPerdidoPorAbducao);
+            PlayAbducaoAnimation();           
         }
 
     }
@@ -89,5 +94,10 @@ public class PlayerController : MonoBehaviour
             value = 0;
 
         abducaoPoints = value;
+    }
+
+    public void PlayAbducaoAnimation()
+    {
+        abducaoAnim.Play(anim_abducao_dropping);
     }
 }

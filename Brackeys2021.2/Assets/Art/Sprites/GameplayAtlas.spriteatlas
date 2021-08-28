@@ -56,7 +56,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 5ec93e29823626341a5275883d7bd8b7, type: 3}
-    totalSpriteSurfaceArea: 3185301
+    totalSpriteSurfaceArea: 3250837
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -89,6 +89,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
   - {fileID: 21300000, guid: de5084bb5e49e5443834f411d9bbfbeb, type: 3}
   - {fileID: 21300000, guid: 5ca2a4fb3a424784c963e60fe4225102, type: 3}
+  - {fileID: 21300000, guid: ece90dacd46420c4ea85cfd00a167745, type: 3}
   - {fileID: 21300000, guid: a2c12dbc5d6829c478065e97ed6b7f7f, type: 3}
   - {fileID: 21300000, guid: 8043d0cc9a863f94f961dfe3eaab0aac, type: 3}
   - {fileID: 21300000, guid: 4d9b1ccc71bac75449d82f0e2286f3ab, type: 3}
@@ -128,6 +129,7 @@ SpriteAtlas:
   - Billboard
   - BillBoard2_PlaceHolder
   - Cow02V2
+  - blob_pivot_down
   - Ufov2
   - Cow04V2
   - CrowFlying_PlaceHolder
