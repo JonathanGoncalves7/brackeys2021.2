@@ -95,7 +95,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkCooldown: 2
+  percentageWalkCooldownMaximumChaos: 75
   restWalkCooldown: 0
+  speed: 3.5
+  percentageSpeedMaximumChaos: 50
   waypoints: {fileID: 0}
 --- !u!195 &-6268633992309515511
 NavMeshAgent:
@@ -190,12 +193,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a8c4b3a615bf7664b85b54c33076eda6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5899fb1bd01a0454e8fb9fe69680553c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.98, y: 0.99}
+  m_Size: {x: 2.18, y: 1.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -56,7 +56,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 5ec93e29823626341a5275883d7bd8b7, type: 3}
-    totalSpriteSurfaceArea: 3033755
+    totalSpriteSurfaceArea: 3185301
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -71,11 +71,12 @@ SpriteAtlas:
   - {fileID: 21300000, guid: eb898372022923d46a00ee51c1b59037, type: 3}
   - {fileID: 21300000, guid: 2f6fc543ff1d24a44aa722000391bde0, type: 3}
   - {fileID: 21300000, guid: f3297f44bbdd3e54c923fec3bffffe16, type: 3}
+  - {fileID: 21300000, guid: e53b40b46a6e37746b5240baf233283d, type: 3}
   - {fileID: 21300000, guid: 61b0d5d503122504c8fbccbe02601b7a, type: 3}
   - {fileID: 21300000, guid: ca550826957d5da44891cd61cb4f7400, type: 3}
-  - {fileID: 21300000, guid: a8c4b3a615bf7664b85b54c33076eda6, type: 3}
   - {fileID: 21300000, guid: a242776759f55f94eb3c125e435703bc, type: 3}
   - {fileID: 21300000, guid: 0a062da78a978f24ea0b4f1d95718cdf, type: 3}
+  - {fileID: 21300000, guid: d081b1c7da6a10d419f7d4baf8560690, type: 3}
   - {fileID: 21300000, guid: 4fbf3138359bcc546bffa08990193015, type: 3}
   - {fileID: 21300000, guid: ec347c090868f8e45abf63c229d2db70, type: 3}
   - {fileID: 21300000, guid: 2c424279dc27abc4e98b1e8f5d86b7ae, type: 3}
@@ -83,10 +84,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c12522c99e37b4a40b89b97ebe6ce793, type: 3}
   - {fileID: 21300000, guid: 10edebaa71611914aa631ce12c17b620, type: 3}
   - {fileID: 21300000, guid: 50d8d0ca4224ea24e86631c3304a1892, type: 3}
+  - {fileID: 21300000, guid: 5899fb1bd01a0454e8fb9fe69680553c, type: 3}
   - {fileID: 21300000, guid: 2d6dce7b836faa84789467d59e84c179, type: 3}
   - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
   - {fileID: 21300000, guid: de5084bb5e49e5443834f411d9bbfbeb, type: 3}
+  - {fileID: 21300000, guid: 5ca2a4fb3a424784c963e60fe4225102, type: 3}
   - {fileID: 21300000, guid: a2c12dbc5d6829c478065e97ed6b7f7f, type: 3}
+  - {fileID: 21300000, guid: 8043d0cc9a863f94f961dfe3eaab0aac, type: 3}
   - {fileID: 21300000, guid: 4d9b1ccc71bac75449d82f0e2286f3ab, type: 3}
   - {fileID: 21300000, guid: 0886f93d29e114f479b914998d44a6d9, type: 3}
   - {fileID: 21300000, guid: 65ce6f9d5cb8b5b45a6b086104606ee3, type: 3}
@@ -106,11 +110,12 @@ SpriteAtlas:
   - Bush
   - Pig
   - Tree2
+  - Cow03V2
   - Tree
   - Pig2
-  - Cow01
   - Horse
   - CrowStand_PlaceHolder
+  - Porteira
   - Trunk
   - HUD_Bar_Fill
   - BillBoard4_PlaceHolder
@@ -118,10 +123,13 @@ SpriteAtlas:
   - fade
   - Lake
   - Duck02
+  - Cow01V2
   - Stable
   - Billboard
   - BillBoard2_PlaceHolder
+  - Cow02V2
   - Ufov2
+  - Cow04V2
   - CrowFlying_PlaceHolder
   - Corn_Placeholder
   - Farmer
