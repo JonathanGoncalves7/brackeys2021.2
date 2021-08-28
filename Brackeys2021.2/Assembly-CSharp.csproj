@@ -46,6 +46,9 @@
      <Compile Include="Assets\Scripts\MeshSortingLayer.cs" />
      <Compile Include="Assets\Scripts\AbductTarget.cs" />
      <Compile Include="Assets\Scripts\Waypoints.cs" />
+     <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
+     <Compile Include="Assets\Scripts\CaosManager.cs" />
+     <Compile Include="Assets\Scripts\FpsCounter.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -60,6 +63,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Shaders\Sprites-Default-Additive.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
