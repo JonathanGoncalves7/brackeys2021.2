@@ -21,6 +21,7 @@ public class WaypointWalker : MonoBehaviour
     private NavMeshAgent agent;
     private Rigidbody rb;
     private PlayerController playerController;
+    private SpriteRenderer sprite;
 
 
     float GetWalkCooldown()
@@ -35,11 +36,17 @@ public class WaypointWalker : MonoBehaviour
         return speed + (speed * (percentageSpeedMaximumChaos * currentCaosPoints / 100));
     }
 
+    void FlipSprite(bool flip)
+    {
+        sprite.flipX = flip;
+    }
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
 
         agent.autoBraking = true;
         agent.speed = speed;
@@ -74,7 +81,7 @@ public class WaypointWalker : MonoBehaviour
 
     void Walking()
     {
-         if (isDestination())
+        if (isDestination())
         {
             restWalkCooldown -= Time.deltaTime;
         }
@@ -83,6 +90,11 @@ public class WaypointWalker : MonoBehaviour
         {
             restWalkCooldown = GetWalkCooldown();
             currentWaypoint = Random.Range(0, waypoints.waypoints.Count);
+
+            bool posicaoDoDestinoFicaParaEsquerda = transform.position.x - waypoints.waypoints[currentWaypoint].transform.position.x < 0;
+
+            FlipSprite(posicaoDoDestinoFicaParaEsquerda);
+
             agent.destination = waypoints.waypoints[currentWaypoint].transform.position;
         }
     }
