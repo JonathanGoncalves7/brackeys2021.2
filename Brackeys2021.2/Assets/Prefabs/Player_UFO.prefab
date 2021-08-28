@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 283445861384005633}
   - component: {fileID: 9169644557662035868}
   - component: {fileID: 900482502}
+  - component: {fileID: 6162870619135472065}
   m_Layer: 0
   m_Name: Player_UFO
   m_TagString: Player
@@ -288,11 +289,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
-  castingRadius: 2
-  raycastOrigin: {fileID: 1576437000555731588}
-  currentHitObject: {fileID: 0}
   caosSlider: {fileID: 3023253113738470231}
   abducaoSlider: {fileID: 6750704817303054738}
+  caosSliderFloat: 0
+  abducaoSliderFloat: 0
 --- !u!114 &9169644557662035868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +339,22 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &6162870619135472065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992725608949577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0229faac49ef3a944a2d87ebce17de17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  castingRadius: 6
+  raycastOrigin: {fileID: 1576437000555731588}
+  currentHitObject: {fileID: 0}
 --- !u!1 &7992725753855122
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,20 +7,11 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRB;
     public float moveSpeed;
-    public float castingRadius;
-    public Transform raycastOrigin;
-    public GameObject currentHitObject;
 
     private Vector2 moveInput;
 
-    private Vector3 origin;
-    private Vector3 direction;
-
     public Slider caosSlider, abducaoSlider;
     [SerializeField] private float caosSliderFloat, abducaoSliderFloat;
-
-    [SerializeField]
-    private float velocidadeAbducao;
 
     public void AddCaosPoints(float value)
     {
@@ -59,6 +50,10 @@ public class PlayerController : MonoBehaviour
         return caosSliderFloat;
     }
 
+    public float GetAbducaoPoints()
+    {
+        return abducaoSliderFloat;
+    }
 
     void Start()
     {
@@ -69,45 +64,23 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        MovePlayer();
+        UpdateSliders();
+    }
+
+    private void MovePlayer()
+    {
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
         moveInput.Normalize();
 
-        playerRB.velocity = new Vector3
-            (moveInput.x * moveSpeed, playerRB.velocity.y, moveInput.y * moveSpeed);
-
-        AbductionRaycast();
-
-        caosSlider.value = caosSliderFloat;
-        abducaoSlider.value = abducaoSliderFloat;
-
-
+        playerRB.velocity = new Vector3(moveInput.x * moveSpeed, playerRB.velocity.y, moveInput.y * moveSpeed);
     }
 
-    void AbductionRaycast()
+    private void UpdateSliders()
     {
-        origin = raycastOrigin.position;
-        direction = Vector3.down;
-        RaycastHit raycastHit;
-
-        Debug.DrawRay(origin, direction * moveSpeed, Color.red);
-
-        if (Physics.SphereCast(origin, castingRadius, direction, out raycastHit) && abducaoSliderFloat > 0)
-        {
-            currentHitObject = raycastHit.transform.gameObject;
-            if (currentHitObject.tag == "Target" && Input.GetKey(KeyCode.Space))
-            {
-
-                raycastHit.rigidbody.useGravity = false;
-                raycastHit.transform.position = Vector3.Lerp(raycastHit.transform.position, origin, velocidadeAbducao * Time.fixedDeltaTime);
-                Debug.Log(raycastHit.transform.name);
-            }
-            else if (Input.GetKeyUp(KeyCode.Space) && raycastHit.rigidbody != null)
-            {
-                raycastHit.rigidbody.useGravity = true;
-            }
-
-        }
+        caosSlider.value = caosSliderFloat;
+        abducaoSlider.value = abducaoSliderFloat;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -120,11 +93,5 @@ public class PlayerController : MonoBehaviour
             abducaoSliderFloat -= 0.1f;
         }
 
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawSphere(origin, castingRadius);
     }
 }
