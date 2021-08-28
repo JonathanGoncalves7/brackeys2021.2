@@ -55468,7 +55468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6755853489693362843, guid: fad4765cdf598724ca0822dc1b90ef53, type: 3}
       propertyPath: caosPoints
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6755853489693362843, guid: fad4765cdf598724ca0822dc1b90ef53, type: 3}
       propertyPath: percentageSpeedMaximumChaos
