@@ -62,6 +62,9 @@ public class WaypointWalker : MonoBehaviour
             agent.enabled = false;
         }
 
+        if (!agent.enabled)
+            return;
+
         if (!waypoints)
             return;
 
@@ -71,12 +74,12 @@ public class WaypointWalker : MonoBehaviour
 
     void Walking()
     {
-        if (isDestination())
+        // if (isDestination())
         {
             restWalkCooldown -= Time.deltaTime;
         }
 
-        if (restWalkCooldown <= 0)
+        if (restWalkCooldown <= 0 && playerController.GetCaosPoints() > 0)
         {
             restWalkCooldown = GetWalkCooldown();
             currentWaypoint = Random.Range(0, waypoints.waypoints.Count);
