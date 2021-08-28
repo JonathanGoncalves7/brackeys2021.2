@@ -23,7 +23,7 @@ Shader "Sprites/DefaultAdditive"
 		Cull Off
 		Lighting Off
 		ZWrite Off
-		Blend SrcAlpha One
+		Blend OneMinusDstColor One
 /*		Blend One OneMinusSrcAlpha*/
 		Pass
 		{
