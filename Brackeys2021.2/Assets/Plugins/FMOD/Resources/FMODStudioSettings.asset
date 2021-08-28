@@ -280,8 +280,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../../Downloads/Brackeys/Brackeys.fspro
-  sourceBankPath: ../../../../Downloads/Brackeys/Build
+  sourceProjectPath: FMOD/Project/Brackeys/Brackeys.fspro
+  sourceBankPath: FMOD/Project/Brackeys/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
