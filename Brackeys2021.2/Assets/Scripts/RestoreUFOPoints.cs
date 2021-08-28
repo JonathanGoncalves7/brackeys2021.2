@@ -26,11 +26,9 @@ public class RestoreUFOPoints : MonoBehaviour
         if (restTimeToChange <= 0)
         {
             other.gameObject.GetComponent<PlayerController>().AddAbducaoPoints(abducaoPointsRestore);
-            other.gameObject.GetComponent<PlayerController>().SubCaosPoints(caosPointsDown);
+            CaosManager.Instance.SubCaosPoints(caosPointsDown);
 
             restTimeToChange = timeToChangePoints;
         }
-
-
     }
 }

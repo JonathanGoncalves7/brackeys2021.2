@@ -5,35 +5,31 @@ using UnityEngine.AI;
 
 public class WaypointWalker : MonoBehaviour
 {
-    [Header("Walking")]
-    [SerializeField] private float walkCooldown = 5f;
-    [SerializeField] [Range(0, 95)] private int percentageWalkCooldownMaximumChaos = 75;
-    [SerializeField] private float restWalkCooldown = 0f;
-    [Space]
-    [Header("Speed")]
-    [SerializeField] private float speed = 3.5f;
-    [SerializeField] [Range(0, 75)] private int percentageSpeedMaximumChaos = 50;
-    [Space]
     [Header("Waypoints")]
     [SerializeField] private Waypoints waypoints;
 
     private int currentWaypoint;
     private NavMeshAgent agent;
     private Rigidbody rb;
-    private PlayerController playerController;
     private SpriteRenderer sprite;
-
+    [SerializeField] private float restWalkCooldown = 0f;
 
     float GetWalkCooldown()
     {
-        float currentCaosPoints = playerController.GetCaosPoints();
-        return walkCooldown - (walkCooldown * (percentageWalkCooldownMaximumChaos * currentCaosPoints / 100));
+        float walkCooldown = CaosManager.Instance.GetWalkCooldown();
+        float currentCaosPoints = CaosManager.Instance.GetCaosPoints();
+        float porcentage = CaosManager.Instance.GetPercentageWalkCooldownMaximumChaos();
+
+        return walkCooldown - (walkCooldown * (porcentage * currentCaosPoints / 100));
     }
 
     float GetSpeed()
     {
-        float currentCaosPoints = playerController.GetCaosPoints();
-        return speed + (speed * (percentageSpeedMaximumChaos * currentCaosPoints / 100));
+        float speed = CaosManager.Instance.Getspeed();
+        float currentCaosPoints = CaosManager.Instance.GetCaosPoints();
+        float porcentage = CaosManager.Instance.GetPercentageSpeedMaximumChaos();
+
+        return speed + (speed * (porcentage * currentCaosPoints / 100));
     }
 
     void FlipSprite(bool flip)
@@ -45,13 +41,12 @@ public class WaypointWalker : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         sprite = GetComponentInChildren<SpriteRenderer>();
 
         agent.autoBraking = true;
-        agent.speed = speed;
+        agent.speed = GetSpeed();
 
-        restWalkCooldown = Random.Range(0, walkCooldown);
+        restWalkCooldown = Random.Range(0, CaosManager.Instance.GetWalkCooldown());
     }
 
     private void OnCollisionEnter(Collision other)
@@ -86,7 +81,7 @@ public class WaypointWalker : MonoBehaviour
             restWalkCooldown -= Time.deltaTime;
         }
 
-        if (restWalkCooldown <= 0 && playerController.GetCaosPoints() > 0)
+        if (restWalkCooldown <= 0 && CaosManager.Instance.GetCaosPoints() > 0)
         {
             restWalkCooldown = GetWalkCooldown();
             currentWaypoint = Random.Range(0, waypoints.waypoints.Count);

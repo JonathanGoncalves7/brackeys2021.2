@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
 
     [Header("Caos")]
-    [SerializeField] private float caosPoints = 0;
-    [SerializeField] private float caosPointsAdicionadoPorAbducao = 0.1f;
     [SerializeField] private Slider caosSlider;
 
     [Header("Abducao")]
@@ -24,7 +22,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
-        SetCaosPoints(0);
+
         SetAbducaoPoints(1);
     }
 
@@ -45,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateSliders()
     {
-        caosSlider.value = caosPoints;
+        caosSlider.value = CaosManager.Instance.GetCaosPoints();
         abducaoSlider.value = abducaoPoints;
     }
 
@@ -55,26 +53,10 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
 
-            AddCaosPoints(caosPointsAdicionadoPorAbducao);
+            CaosManager.Instance.AddCaosPoints(CaosManager.Instance.GetCaosPointsAdicionadoPorAbducao());
             SubAbducaoPoints(abducaoPointsPerdidoPorAbducao);
         }
 
-    }
-
-    public void AddCaosPoints(float value)
-    {
-        caosPoints += value;
-
-        if (caosPoints > 1)
-            caosPoints = 1;
-    }
-
-    public void SubCaosPoints(float value)
-    {
-        caosPoints -= value;
-
-        if (caosPoints <= 0)
-            caosPoints = 0;
     }
 
     public void AddAbducaoPoints(float value)
@@ -93,25 +75,9 @@ public class PlayerController : MonoBehaviour
             abducaoPoints = 0;
     }
 
-    public float GetCaosPoints()
-    {
-        return caosPoints;
-    }
-
     public float GetAbducaoPoints()
     {
         return abducaoPoints;
-    }
-
-    public void SetCaosPoints(float value)
-    {
-        if (value > 1)
-            value = 1;
-
-        if (value < 0)
-            value = 0;
-
-        caosPoints = value;
     }
 
     public void SetAbducaoPoints(float value)
