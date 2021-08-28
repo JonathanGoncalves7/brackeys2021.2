@@ -5,61 +5,27 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody playerRB;
-    public float moveSpeed;
-
+    [Header("Movimentacao")]
+    [SerializeField] private float moveSpeed = 50;
     private Vector2 moveInput;
 
-    public Slider caosSlider, abducaoSlider;
-    [SerializeField] private float caosSliderFloat, abducaoSliderFloat;
+    [Header("Caos")]
+    [SerializeField] private float caosPoints = 0;
+    [SerializeField] private float caosPointsAdicionadoPorAbducao = 0.1f;
+    [SerializeField] private Slider caosSlider;
 
-    public void AddCaosPoints(float value)
-    {
-        caosSliderFloat += value;
+    [Header("Abducao")]
+    [SerializeField] private float abducaoPoints = 1;
+    [SerializeField] private float abducaoPointsPerdidoPorAbducao = 0.1f;
+    [SerializeField] private Slider abducaoSlider;
 
-        if (caosSliderFloat > 1)
-            caosSliderFloat = 1;
-    }
-
-    public void SubCaosPoints(float value)
-    {
-        caosSliderFloat -= value;
-
-        if (caosSliderFloat <= 0)
-            caosSliderFloat = 0;
-    }
-
-    public void AddAbducaoPoints(float value)
-    {
-        abducaoSliderFloat += value;
-
-        if (abducaoSliderFloat > 1)
-            abducaoSliderFloat = 1;
-    }
-
-    public void SubAbducaoPoints(float value)
-    {
-        abducaoSliderFloat -= value;
-
-        if (abducaoSliderFloat <= 0)
-            abducaoSliderFloat = 0;
-    }
-
-    public float GetCaosPoints()
-    {
-        return caosSliderFloat;
-    }
-
-    public float GetAbducaoPoints()
-    {
-        return abducaoSliderFloat;
-    }
+    private Rigidbody playerRB;
 
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
-        caosSliderFloat = 0f;
-        abducaoSliderFloat = 1f;
+        SetCaosPoints(0);
+        SetAbducaoPoints(1);
     }
 
     void FixedUpdate()
@@ -79,19 +45,83 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateSliders()
     {
-        caosSlider.value = caosSliderFloat;
-        abducaoSlider.value = abducaoSliderFloat;
+        caosSlider.value = caosPoints;
+        abducaoSlider.value = abducaoPoints;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.gameObject.tag == "Target")
+        if (collision.transform.gameObject.CompareTag("Target"))
         {
-
             Destroy(collision.gameObject);
-            caosSliderFloat += 0.1f;
-            abducaoSliderFloat -= 0.1f;
+
+            AddCaosPoints(caosPointsAdicionadoPorAbducao);
+            SubAbducaoPoints(abducaoPointsPerdidoPorAbducao);
         }
 
+    }
+
+    public void AddCaosPoints(float value)
+    {
+        caosPoints += value;
+
+        if (caosPoints > 1)
+            caosPoints = 1;
+    }
+
+    public void SubCaosPoints(float value)
+    {
+        caosPoints -= value;
+
+        if (caosPoints <= 0)
+            caosPoints = 0;
+    }
+
+    public void AddAbducaoPoints(float value)
+    {
+        abducaoPoints += value;
+
+        if (abducaoPoints > 1)
+            abducaoPoints = 1;
+    }
+
+    public void SubAbducaoPoints(float value)
+    {
+        abducaoPoints -= value;
+
+        if (abducaoPoints <= 0)
+            abducaoPoints = 0;
+    }
+
+    public float GetCaosPoints()
+    {
+        return caosPoints;
+    }
+
+    public float GetAbducaoPoints()
+    {
+        return abducaoPoints;
+    }
+
+    public void SetCaosPoints(float value)
+    {
+        if (value > 1)
+            value = 1;
+
+        if (value < 0)
+            value = 0;
+
+        caosPoints = value;
+    }
+
+    public void SetAbducaoPoints(float value)
+    {
+        if (value > 1)
+            value = 1;
+
+        if (value < 0)
+            value = 0;
+
+        abducaoPoints = value;
     }
 }

@@ -13,7 +13,7 @@ public class AbductTarget : MonoBehaviour
     private Vector3 direction;
 
     public Transform raycastOrigin;
-    public GameObject currentHitObject;
+    public GameObject currentTarget;
 
     private void Awake()
     {
@@ -32,19 +32,40 @@ public class AbductTarget : MonoBehaviour
 
         origin = raycastOrigin.position;
         direction = Vector3.down;
-        RaycastHit raycastHit;
+        RaycastHit[] raycastHit = Physics.SphereCastAll(origin, castingRadius, direction);
 
-        if (Physics.SphereCast(origin, castingRadius, direction, out raycastHit))
+        GameObject nextTarget = null;
+
+        for (int i = 0; i < raycastHit.Length; i++)
         {
-            currentHitObject = raycastHit.transform.gameObject;
-            if (currentHitObject.CompareTag("Target") && Input.GetKey(KeyCode.Space))
+            GameObject gameObjectHit = raycastHit[i].transform.gameObject;
+
+            if (!gameObjectHit.CompareTag("Target"))
+                continue;
+
+            if (nextTarget == null)
+                nextTarget = gameObjectHit;
+
+            if (gameObjectHit.Equals(currentTarget))
             {
-                raycastHit.rigidbody.useGravity = false;
-                raycastHit.rigidbody.MovePosition(Vector3.Lerp(raycastHit.transform.position, origin, speed * Time.fixedDeltaTime));
+                nextTarget = currentTarget;
             }
-            else if (Input.GetKeyUp(KeyCode.Space) && raycastHit.rigidbody != null)
+        }
+
+        currentTarget = nextTarget;
+
+        if (currentTarget != null)
+        {
+            Rigidbody targetRigidbody = currentTarget.GetComponent<Rigidbody>();
+
+            if (Input.GetKey(KeyCode.Space))
             {
-                raycastHit.rigidbody.useGravity = true;
+                targetRigidbody.useGravity = false;
+                targetRigidbody.MovePosition(Vector3.Lerp(currentTarget.transform.position, origin, speed * Time.fixedDeltaTime));
+            }
+            else
+            {
+                targetRigidbody.useGravity = true;
             }
         }
     }

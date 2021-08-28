@@ -74,7 +74,7 @@ public class WaypointWalker : MonoBehaviour
 
     void Walking()
     {
-        // if (isDestination())
+         if (isDestination())
         {
             restWalkCooldown -= Time.deltaTime;
         }
