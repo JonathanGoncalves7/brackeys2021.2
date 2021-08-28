@@ -52,6 +52,12 @@ public class AbductTarget : MonoBehaviour
             }
         }
 
+        if (currentTarget != null && !currentTarget.Equals(nextTarget))
+        {
+            currentTarget.GetComponent<Rigidbody>().useGravity = true;
+            currentTarget.GetComponent<Rigidbody>().isKinematic = false;
+        }
+
         currentTarget = nextTarget;
 
         if (currentTarget != null)
@@ -61,11 +67,13 @@ public class AbductTarget : MonoBehaviour
             if (Input.GetKey(KeyCode.Space))
             {
                 targetRigidbody.useGravity = false;
-                targetRigidbody.MovePosition(Vector3.Lerp(currentTarget.transform.position, origin, speed * Time.fixedDeltaTime));
+                targetRigidbody.isKinematic = true;
+                targetRigidbody.transform.position = (Vector3.Lerp(currentTarget.transform.position, origin, speed * Time.fixedDeltaTime));
             }
             else
             {
                 targetRigidbody.useGravity = true;
+                targetRigidbody.isKinematic = false;
             }
         }
     }
