@@ -25,7 +25,7 @@ SpriteAtlas:
       m_BuildTarget: Standalone
       m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
-      m_TextureFormat: 25
+      m_TextureFormat: 12
       m_TextureCompression: 1
       m_CompressionQuality: 100
       m_CrunchedCompression: 0
@@ -50,13 +50,13 @@ SpriteAtlas:
       padding: 8
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 1
-      enableTightPacking: 1
+      enableRotation: 0
+      enableTightPacking: 0
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 5ec93e29823626341a5275883d7bd8b7, type: 3}
-    totalSpriteSurfaceArea: 3366293
+    totalSpriteSurfaceArea: 3514015
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -70,6 +70,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 458a5091840e2e848a780b69d7f7f169, type: 3}
   - {fileID: 21300000, guid: 53ba70d15752a124c80acdac26ea45af, type: 3}
   - {fileID: 21300000, guid: eb898372022923d46a00ee51c1b59037, type: 3}
+  - {fileID: 21300000, guid: 7b75c9b27d5931049b2c986a0ffdda7d, type: 3}
   - {fileID: 21300000, guid: 2f6fc543ff1d24a44aa722000391bde0, type: 3}
   - {fileID: 21300000, guid: f3297f44bbdd3e54c923fec3bffffe16, type: 3}
   - {fileID: 21300000, guid: e53b40b46a6e37746b5240baf233283d, type: 3}
@@ -112,6 +113,7 @@ SpriteAtlas:
   - Galinheiro
   - HUD_Bar_Abduction
   - Bush
+  - Hud3PlaceHolder_2
   - Pig
   - Tree2
   - Cow03V2
