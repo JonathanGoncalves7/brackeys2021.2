@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7992724948151006}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -7.69, z: -2.91}
-  m_LocalScale: {x: 3.4, y: 3.4, z: 1}
+  m_LocalPosition: {x: 0, y: -7.69, z: 1.71}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 7992725608949580}
   m_RootOrder: 2
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1eac4e5fe50a44144a4d1c4f71bedd4b, type: 3}
-  m_Color: {r: 0.98730797, g: 0.7783019, b: 1, a: 0.54901963}
+  m_Sprite: {fileID: 21300000, guid: ece90dacd46420c4ea85cfd00a167745, type: 3}
+  m_Color: {r: 0.9705882, g: 0.5, b: 1, a: 0.9098039}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: a2c12dbc5d6829c478065e97ed6b7f7f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9, g: 0.81, b: 0.88199997, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -290,8 +290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
-  caosPoints: 0
-  caosPointsAdicionadoPorAbducao: 0.1
   caosSlider: {fileID: 3023253113738470231}
   abducaoPoints: 1
   abducaoPointsPerdidoPorAbducao: 0.1

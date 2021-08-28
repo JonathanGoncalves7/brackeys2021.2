@@ -13571,7 +13571,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 10edebaa71611914aa631ce12c17b620, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7607843, g: 0.56078434, b: 0.8, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14864,11 +14864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3210838042504795057, guid: 66862342eaabdb845a17471eb519ee65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 3210838042504795057, guid: 66862342eaabdb845a17471eb519ee65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.4
+      value: -10.4
       objectReference: {fileID: 0}
     - target: {fileID: 3210838042504795057, guid: 66862342eaabdb845a17471eb519ee65, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16015,6 +16015,88 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3210838042504795057, guid: 66862342eaabdb845a17471eb519ee65, type: 3}
   m_PrefabInstance: {fileID: 38753216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &451518890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451518891}
+  - component: {fileID: 451518892}
+  m_Layer: 0
+  m_Name: blob_Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &451518891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451518890}
+  m_LocalRotation: {x: -0.98859566, y: -0, z: -0, w: 0.15059456}
+  m_LocalPosition: {x: 0.04, y: 0.74, z: -5.31}
+  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 653455742}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -162.677, y: 0, z: 0}
+--- !u!212 &451518892
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451518890}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c5e873897bc4e884db218106aff91e97, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 9
+  m_Sprite: {fileID: 21300000, guid: ece90dacd46420c4ea85cfd00a167745, type: 3}
+  m_Color: {r: 1, g: 0.8135679, b: 0, a: 0.4}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.56, y: 2.56}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &451699375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56067,7 +56149,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5595976803463708753, guid: 4351adfe51b0f344ba052a6096f64ee2, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5595976803463708753, guid: 4351adfe51b0f344ba052a6096f64ee2, type: 3}
       propertyPath: m_LocalScale.x
@@ -56906,7 +56988,7 @@ MonoBehaviour:
   m_Follow: {fileID: 653455742}
   m_Lens:
     FieldOfView: 52.3186
-    OrthographicSize: 30.00002
+    OrthographicSize: 19.99998
     NearClipPlane: 0.3
     FarClipPlane: 320
     Dutch: 0
@@ -59674,7 +59756,7 @@ Camera:
   far clip plane: 320
   field of view: 52.3186
   orthographic: 1
-  orthographic size: 30.00002
+  orthographic size: 19.99998
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -74635,9 +74717,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7992724948151004, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992724948151004, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7992724948151007, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992724948151007, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7992724948151007, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7992724948151007, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.2
+      value: -8.123
       objectReference: {fileID: 0}
     - target: {fileID: 7992725352267324, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -74784,6 +74886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 721138350}
     m_Modifications:
+    - target: {fileID: 591373093974373608, guid: ba34e1f72adbec9479690082fe8a7b3c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 591373093974373608, guid: ba34e1f72adbec9479690082fe8a7b3c, type: 3}
       propertyPath: m_LocalPosition.z
       value: 37.7

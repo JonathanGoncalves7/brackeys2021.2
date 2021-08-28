@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 45a490997f97daa42842521a47964648, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7803279, g: 0.68, b: 0.8, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -258,9 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40486259696e449078e8240ac8f97798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkCooldown: 2
-  restWalkCooldown: 0
   waypoints: {fileID: 0}
+  restWalkCooldown: 0
 --- !u!195 &4055204496967473039
 NavMeshAgent:
   m_ObjectHideFlags: 0
