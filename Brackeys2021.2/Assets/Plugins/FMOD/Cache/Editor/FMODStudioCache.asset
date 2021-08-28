@@ -1386,6 +1386,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-8753987112280568607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Fiddle
+  m_EditorClassIdentifier: 
+  Name: Fiddle
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-8742772284915021361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2178,6 +2200,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8488921121506819946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/button_select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/button_select
+  guid: 0e51c9b79b30c04092d91ee270333945
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 160
 --- !u!114 &-8482516333456307653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3257,6 +3302,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-8186899542669538138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Bar_Very_High
+  m_EditorClassIdentifier: 
+  Name: Chaos_Bar_Very_High
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-8174738743417810022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4578,6 +4645,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-7751093617404817666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Perc
+  m_EditorClassIdentifier: 
+  Name: Chaos_Perc
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7751052851890142077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5031,6 +5120,28 @@ MonoBehaviour:
   m_Name: parameter:/music/No Chaos_Banjo
   m_EditorClassIdentifier: 
   Name: No Chaos_Banjo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7587463245624451570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Banjo
+  m_EditorClassIdentifier: 
+  Name: Chaos_Banjo
   Min: 0
   Max: 1
   Default: 0
@@ -7089,6 +7200,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7051162877588426868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/horse
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/horse
+  guid: 70dcad3895a2bf4bb844763b00fdeecc
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 909
 --- !u!114 &-7045723551771902025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10777,6 +10911,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-6035682560159782398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No Chaos_Banjo
+  m_EditorClassIdentifier: 
+  Name: No Chaos_Banjo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-6034069355294186758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11679,6 +11835,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-5756435789734870192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No Chaos_Drums
+  m_EditorClassIdentifier: 
+  Name: No Chaos_Drums
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-5752689784943189739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12735,6 +12913,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-5405626888595574949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/button_in
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/button_in
+  guid: 597b821dc444e6489e7283b3213b569b
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 347
 --- !u!114 &-5379544875458551650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13748,6 +13949,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-5144220907986207983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/recovering_power/Recovering Power
+  m_EditorClassIdentifier: 
+  Name: Recovering Power
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-5131771358434914738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14606,6 +14829,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-4951809340478321750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Bar_Very_High
+  m_EditorClassIdentifier: 
+  Name: Chaos_Bar_Very_High
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-4931254192695581726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14672,6 +14917,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4917865707555477487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/farmer
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/farmer
+  guid: 56cce1f817ee8041a6400166d3f22519
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1285
 --- !u!114 &-4914299197591566598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15742,6 +16010,28 @@ MonoBehaviour:
   m_Name: parameter:/music/Chaos_Bar_Very_High
   m_EditorClassIdentifier: 
   Name: Chaos_Bar_Very_High
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-4565808509230913489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Bass
+  m_EditorClassIdentifier: 
+  Name: Chaos_Bass
   Min: 0
   Max: 1
   Default: 0
@@ -17602,6 +17892,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-4042378073278229878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/success
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/success
+  guid: 9114fada2d366d48b196787a06e4bd83
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1128
 --- !u!114 &-4041592477398534754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18702,6 +19015,30 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-3689136571328253450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/HUD/Power Bar/recovering_power
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/HUD/Power Bar/recovering_power
+  guid: cd2baf90cf357346ac38bf42ad77db11
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5144220907986207983}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2633
 --- !u!114 &-3681083715644263561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19473,6 +19810,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-3437500806821805283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/chicken
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/chicken
+  guid: 8b8d3165bcea484ebd644223f7efc52e
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 385
 --- !u!114 &-3437105600752471560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21037,6 +21397,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2884741253867364435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/button_out
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/button_out
+  guid: bba100e7c05857418ae6489b1c5e00a8
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 462
 --- !u!114 &-2877735890578208921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22821,6 +23204,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2297421340597368624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No Chaos_Bass
+  m_EditorClassIdentifier: 
+  Name: No Chaos_Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-2296732975925307388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23504,6 +23909,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2097345490776485488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/start
+  guid: fa9b17480590334594d7516f21c5ea28
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1630
 --- !u!114 &-2088824272892931465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27424,6 +27852,51 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-957142008732567390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/crow
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/crow
+  guid: 3761c33437075445a59fb3a1a54b210f
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 808
+--- !u!114 &-954908551544584800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No Chaos_Banjo
+  m_EditorClassIdentifier: 
+  Name: No Chaos_Banjo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-951115172168704050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28283,6 +28756,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-705537455888020536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/abduction
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/abduction
+  guid: fbcaab14db758e4db3e89f4bc3543cb1
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1606
 --- !u!114 &-705300332208740501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28450,6 +28946,28 @@ MonoBehaviour:
   m_Name: parameter:/music/Fiddle
   m_EditorClassIdentifier: 
   Name: Fiddle
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-682892378665650176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Perc
+  m_EditorClassIdentifier: 
+  Name: Chaos_Perc
   Min: 0
   Max: 1
   Default: 0
@@ -28890,6 +29408,28 @@ MonoBehaviour:
   m_Name: parameter:/music/No_Chaos Harmonica
   m_EditorClassIdentifier: 
   Name: No_Chaos Harmonica
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-531902284590320057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No Chaos_Bass
+  m_EditorClassIdentifier: 
+  Name: No Chaos_Bass
   Min: 0
   Max: 1
   Default: 0
@@ -30087,6 +30627,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-128189246013777446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/ship_moves
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/ship_moves
+  guid: ebdbd9d461472d4698446031fe08d5d1
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 700
 --- !u!114 &-124844423383275562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30563,37 +31126,37 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 5215364094360291777}
-  - {fileID: 5887177577832034362}
+  - {fileID: 6430225475401329776}
+  - {fileID: 3169820814518384261}
   EditorEvents:
-  - {fileID: 4224414062654414035}
-  - {fileID: -8286084938247645383}
-  - {fileID: 5607249594900691757}
-  - {fileID: -4498764120624010600}
-  - {fileID: -3681083715644263561}
-  - {fileID: -5345832124933603401}
-  - {fileID: -117704275652666887}
-  - {fileID: 2083534200767695271}
-  - {fileID: -2730528920628172694}
-  - {fileID: -1594685860264099221}
-  - {fileID: -1155520693715818805}
-  - {fileID: 582881634270180769}
-  - {fileID: 4105881697537834066}
-  - {fileID: -6761582888228522133}
-  - {fileID: 943153793150076543}
-  - {fileID: 933137659500914274}
-  - {fileID: 3637850379691868108}
-  - {fileID: 6189616590801493784}
-  - {fileID: 7694028297857676114}
-  - {fileID: -4480017152577192141}
-  - {fileID: -3305725439194805597}
-  - {fileID: 3390046197569588707}
-  - {fileID: -7850887724500694929}
+  - {fileID: -8488921121506819946}
+  - {fileID: 4665737223159395406}
+  - {fileID: 7323823731695404009}
+  - {fileID: -957142008732567390}
+  - {fileID: 5247780854184818062}
+  - {fileID: -4917865707555477487}
+  - {fileID: -5405626888595574949}
+  - {fileID: -7051162877588426868}
+  - {fileID: -3437500806821805283}
+  - {fileID: -4042378073278229878}
+  - {fileID: 6900318617249648561}
+  - {fileID: 3955560923346981625}
+  - {fileID: 9076141378484114722}
+  - {fileID: -2884741253867364435}
+  - {fileID: 5410317503812382690}
+  - {fileID: -3689136571328253450}
+  - {fileID: 7852408912947781855}
+  - {fileID: 4144628586734400558}
+  - {fileID: -128189246013777446}
+  - {fileID: 733588926143215504}
+  - {fileID: -2097345490776485488}
+  - {fileID: 7333054783755744730}
+  - {fileID: -705537455888020536}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5887177577832034362}
+  - {fileID: 3169820814518384261}
   StringsBanks:
-  - {fileID: 5215364094360291777}
+  - {fileID: 6430225475401329776}
   stringsBankWriteTime: 637655129740000000
   cacheVersion: 8
 --- !u!114 &5423220860720624
@@ -32621,6 +33184,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &715092570004935306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Banjo
+  m_EditorClassIdentifier: 
+  Name: Chaos_Banjo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &719281858513241250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32634,6 +33219,63 @@ MonoBehaviour:
   m_Name: parameter:/music/Chaos_Perc
   m_EditorClassIdentifier: 
   Name: Chaos_Perc
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &733588926143215504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MSC/music
+  m_EditorClassIdentifier: 
+  Path: event:/MSC/music
+  guid: f1bb56d987a1204dbb12db8cf78f5373
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5756435789734870192}
+  - {fileID: 7349910877834766471}
+  - {fileID: -4951809340478321750}
+  - {fileID: -682892378665650176}
+  - {fileID: 743908375746133440}
+  - {fileID: 7369677028070954668}
+  - {fileID: 6080432291538585104}
+  - {fileID: -2297421340597368624}
+  - {fileID: 6694010416347817277}
+  - {fileID: -6035682560159782398}
+  - {fileID: 5746189175016540889}
+  - {fileID: 715092570004935306}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 101818
+--- !u!114 &743908375746133440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Harmonica
+  m_EditorClassIdentifier: 
+  Name: Chaos_Harmonica
   Min: 0
   Max: 1
   Default: 0
@@ -34946,6 +35588,28 @@ MonoBehaviour:
   m_Name: parameter:/music/Chaos_Harmonica
   m_EditorClassIdentifier: 
   Name: Chaos_Harmonica
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &1440707918531668300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/recovering_power/Recovering Power
+  m_EditorClassIdentifier: 
+  Name: Recovering Power
   Min: 0
   Max: 1
   Default: 0
@@ -39730,6 +40394,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3031043061137979361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No_Chaos Harmonica
+  m_EditorClassIdentifier: 
+  Name: No_Chaos Harmonica
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &3054854823918381329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39994,6 +40680,26 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3169820814518384261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/Brackeys/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637655129740000000
+  FileSizes:
+  - Name: Desktop
+    Value: 15831424
+  Exists: 1
 --- !u!114 &3187729181106742082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41910,6 +42616,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3700460558121752586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No Chaos_Drums
+  m_EditorClassIdentifier: 
+  Name: No Chaos_Drums
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &3734757325180388304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42592,6 +43320,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3955560923346981625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/pig
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/pig
+  guid: a33259566b655b4ab874e083535aac6b
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 239
 --- !u!114 &3958455739513905895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43143,6 +43894,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4144628586734400558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/et
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/et
+  guid: e19b43aa0669ae4db135ae7e66bd9083
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1143
 --- !u!114 &4154107839301892511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44750,6 +45524,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4665737223159395406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/fail
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/fail
+  guid: 2b773bfd7c19ee4c91540d6b5424ee17
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 936
 --- !u!114 &4681878868703217907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46684,6 +47481,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &5247780854184818062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/crow
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/crow
+  guid: 3771a4e2f2097e42bde83f75eb1a746e
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 504
 --- !u!114 &5252995822578573301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47058,6 +47878,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &5410317503812382690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gameplay/cow
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gameplay/cow
+  guid: cad6125a4773204abe748b49ed7cfada
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1335
 --- !u!114 &5418195148428042817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48115,6 +48958,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &5746189175016540889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Menu
+  m_EditorClassIdentifier: 
+  Name: Menu
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &5748960068371003733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49279,6 +50144,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6080432291538585104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Fiddle
+  m_EditorClassIdentifier: 
+  Name: Fiddle
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &6091397194372998630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50600,6 +51487,26 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6430225475401329776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/Brackeys/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637655129740000000
+  FileSizes:
+  - Name: Desktop
+    Value: 2480
+  Exists: 1
 --- !u!114 &6436831406460893248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50921,6 +51828,28 @@ MonoBehaviour:
   m_Name: parameter:/music/No Chaos_Banjo
   m_EditorClassIdentifier: 
   Name: No Chaos_Banjo
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &6497338269261756489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Drums
+  m_EditorClassIdentifier: 
+  Name: Chaos_Drums
   Min: 0
   Max: 1
   Default: 0
@@ -51525,6 +52454,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6694010416347817277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Drums
+  m_EditorClassIdentifier: 
+  Name: Chaos_Drums
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &6697810665870847828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51921,6 +52872,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6900318617249648561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/chicken
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/chicken
+  guid: a2154552dd70c44db61b4520e7f361a6
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 618
 --- !u!114 &6901364465719565028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53219,6 +54193,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &7323823731695404009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/horse
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/horse
+  guid: 2e993273c92de441ad825b33653f3f09
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1524
 --- !u!114 &7331111060383529809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53241,6 +54238,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &7333054783755744730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/pig
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/pig
+  guid: fba26c2a07abbf4a87e747e76df95554
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 426
 --- !u!114 &7334507880228286505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53351,6 +54371,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &7349910877834766471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/No_Chaos Harmonica
+  m_EditorClassIdentifier: 
+  Name: No_Chaos Harmonica
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &7351539976348195678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53461,6 +54503,28 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &7369677028070954668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Bass
+  m_EditorClassIdentifier: 
+  Name: Chaos_Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &7369717407161115956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55135,6 +56199,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &7852408912947781855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/HUD/Power Bar/no_power
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/HUD/Power Bar/no_power
+  guid: d5af57f56b7d144ab0fbe1d9fb7b8f32
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 228
 --- !u!114 &7859399950654542352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57216,6 +58303,28 @@ MonoBehaviour:
   m_Name: parameter:/music/Chaos_Bar_Very_High
   m_EditorClassIdentifier: 
   Name: Chaos_Bar_Very_High
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &8440717777845847311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Chaos_Harmonica
+  m_EditorClassIdentifier: 
+  Name: Chaos_Harmonica
   Min: 0
   Max: 1
   Default: 0
@@ -59448,6 +60557,29 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Exists: 0
+--- !u!114 &9076141378484114722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voice gibberish/cow
+  m_EditorClassIdentifier: 
+  Path: event:/Voice gibberish/cow
+  guid: ac8455a5584c3b4faf66e79c0f95d346
+  Banks:
+  - {fileID: 3169820814518384261}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1870
 --- !u!114 &9097122297685790709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59505,6 +60637,28 @@ MonoBehaviour:
   m_Name: parameter:/music/No Chaos_Bass
   m_EditorClassIdentifier: 
   Name: No Chaos_Bass
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &9115068606697200557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music/Menu
+  m_EditorClassIdentifier: 
+  Name: Menu
   Min: 0
   Max: 1
   Default: 0
