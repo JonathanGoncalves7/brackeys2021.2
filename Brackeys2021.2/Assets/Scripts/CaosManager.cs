@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CaosManager : MonoBehaviour
 {
-    [SerializeField] private float caosPoints = 0f;
+    [SerializeField] [Range(0, 1)] private float caosPoints = 0f;
     [SerializeField] private float caosPointsAdicionadoPorAbducao = 0.1f;
     [Space]
     [Header("Animals Walking")]
@@ -15,23 +15,19 @@ public class CaosManager : MonoBehaviour
     [SerializeField] private float speed = 3.5f;
     [SerializeField] [Range(0, 75)] private int percentageSpeedMaximumChaos = 50;
 
-    private static CaosManager _instance;
+    public static CaosManager Instance { get; private set; }
 
-    public static CaosManager Instance
+    private void Awake()
     {
-        get
+        if (Instance != null && Instance != this)
         {
-            if (_instance == null)
-            {
-                _instance = GameObject.FindObjectOfType<CaosManager>();
-            }
-
-            return _instance;
+            Destroy(gameObject);
         }
-    }
+        else
+        {
+            Instance = this;
+        }
 
-    void Awake()
-    {
         DontDestroyOnLoad(gameObject);
     }
 
@@ -91,7 +87,7 @@ public class CaosManager : MonoBehaviour
         return percentageWalkCooldownMaximumChaos;
     }
 
-    public float Getspeed()
+    public float GetSpeed()
     {
         return speed;
     }

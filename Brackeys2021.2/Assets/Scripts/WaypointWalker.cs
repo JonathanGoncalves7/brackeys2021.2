@@ -5,14 +5,13 @@ using UnityEngine.AI;
 
 public class WaypointWalker : MonoBehaviour
 {
-    [Header("Waypoints")]
     [SerializeField] private Waypoints waypoints;
+    [SerializeField] private float restWalkCooldown = 0f;
 
     private int currentWaypoint;
     private NavMeshAgent agent;
     private Rigidbody rb;
     private SpriteRenderer sprite;
-    [SerializeField] private float restWalkCooldown = 0f;
 
     float GetWalkCooldown()
     {
@@ -23,9 +22,9 @@ public class WaypointWalker : MonoBehaviour
         return walkCooldown - (walkCooldown * (porcentage * currentCaosPoints / 100));
     }
 
-    float GetSpeed()
+    float GetSpeedWalk()
     {
-        float speed = CaosManager.Instance.Getspeed();
+        float speed = CaosManager.Instance.GetSpeed();
         float currentCaosPoints = CaosManager.Instance.GetCaosPoints();
         float porcentage = CaosManager.Instance.GetPercentageSpeedMaximumChaos();
 
@@ -44,9 +43,10 @@ public class WaypointWalker : MonoBehaviour
         sprite = GetComponentInChildren<SpriteRenderer>();
 
         agent.autoBraking = true;
-        agent.speed = GetSpeed();
 
-        restWalkCooldown = Random.Range(0, CaosManager.Instance.GetWalkCooldown());
+        UpdateSpeedAndAcceleration();
+
+        restWalkCooldown = 0;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -70,8 +70,8 @@ public class WaypointWalker : MonoBehaviour
         if (!waypoints)
             return;
 
+        UpdateSpeedAndAcceleration();
         Walking();
-        UpdateSpeed();
     }
 
     void Walking()
@@ -81,22 +81,32 @@ public class WaypointWalker : MonoBehaviour
             restWalkCooldown -= Time.deltaTime;
         }
 
-        if (restWalkCooldown <= 0 && CaosManager.Instance.GetCaosPoints() > 0)
+        if (CaosManager.Instance.GetCaosPoints() <= 0)
         {
+            agent.isStopped = true;
+            agent.destination = transform.position;
+            restWalkCooldown = 0;
+            return;
+        }
+
+        if (restWalkCooldown <= 0)
+        {
+            agent.isStopped = false;
             restWalkCooldown = GetWalkCooldown();
             currentWaypoint = Random.Range(0, waypoints.waypoints.Count);
 
-            bool posicaoDoDestinoFicaParaEsquerda = transform.position.x - waypoints.waypoints[currentWaypoint].transform.position.x < 0;
+            bool positionDestinationToLeft = transform.position.x - waypoints.waypoints[currentWaypoint].transform.position.x < 0;
 
-            FlipSprite(posicaoDoDestinoFicaParaEsquerda);
+            FlipSprite(positionDestinationToLeft);
 
             agent.destination = waypoints.waypoints[currentWaypoint].transform.position;
         }
     }
 
-    void UpdateSpeed()
+    void UpdateSpeedAndAcceleration()
     {
-        agent.speed = GetSpeed();
+        agent.speed = GetSpeedWalk();
+        agent.acceleration = GetSpeedWalk();
     }
 
     bool isDestination()
