@@ -5,9 +5,16 @@ using UnityEngine.AI;
 
 public class WaypointWalker : MonoBehaviour
 {
+    [Header("Walking")]
     [SerializeField] private float walkCooldown = 5f;
     [SerializeField] [Range(0, 95)] private int percentageWalkCooldownMaximumChaos = 75;
     [SerializeField] private float restWalkCooldown = 0f;
+    [Space]
+    [Header("Speed")]
+    [SerializeField] private float speed = 3.5f;
+    [SerializeField] [Range(0, 75)] private int percentageSpeedMaximumChaos = 50;
+    [Space]
+    [Header("Waypoints")]
     [SerializeField] private Waypoints waypoints;
 
     private int currentWaypoint;
@@ -22,6 +29,12 @@ public class WaypointWalker : MonoBehaviour
         return walkCooldown - (walkCooldown * (percentageWalkCooldownMaximumChaos * currentCaosPoints / 100));
     }
 
+    float GetSpeed()
+    {
+        float currentCaosPoints = playerController.GetCaosPoints();
+        return speed + (speed * (percentageSpeedMaximumChaos * currentCaosPoints / 100));
+    }
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -29,6 +42,7 @@ public class WaypointWalker : MonoBehaviour
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         agent.autoBraking = true;
+        agent.speed = speed;
 
         restWalkCooldown = Random.Range(0, walkCooldown);
     }
@@ -52,6 +66,7 @@ public class WaypointWalker : MonoBehaviour
             return;
 
         Walking();
+        UpdateSpeed();
     }
 
     void Walking()
@@ -67,6 +82,11 @@ public class WaypointWalker : MonoBehaviour
             currentWaypoint = Random.Range(0, waypoints.waypoints.Count);
             agent.destination = waypoints.waypoints[currentWaypoint].transform.position;
         }
+    }
+
+    void UpdateSpeed()
+    {
+        agent.speed = GetSpeed();
     }
 
     bool isDestination()
