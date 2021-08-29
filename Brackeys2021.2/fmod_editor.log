@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B2B6646868 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000024CB9C12BE8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +18,451 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE7CE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE7CE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B66B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B66B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE4898
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE4898
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE81F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE81F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE2A38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE2A38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE6548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE6548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B6ABB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B6ABB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B6AA08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B6AA08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B6A348
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B6A348
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE7CE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE7CE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B66B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B66B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE4898
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE4898
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE81F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE81F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE2A38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE2A38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE6548
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE6548
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B6ABB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B6ABB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B6AA08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B6AA08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B6A348
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B6A348
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE7CE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE7CE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024CB6B66B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024CB6B66B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE4898
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE4898
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D01AE81F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D01AE81F8
+[LOG] SystemI::createSound                     : filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024D95348BB8 : node = 0000024CB228FE10
+[LOG] SystemI::createSound                     : add node to async list : head = 0000024CB1F068D8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95348BB8
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95345AC8 : node = 0000024CB2291350
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB228FF20
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95346D58 : node = 0000024CB2292390
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95343FC8 : node = 0000024CB2292250
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 2
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95347C88 : node = 0000024CB2292890
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 3
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D953444D8 : node = 0000024CB2291C10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 4
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='farm_ambience', format=5, channels=2, frequency=48000, lengthbytes=1380192, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.141357.
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95346F08 : node = 0000024CB2290F90
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 5
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95344688 : node = 0000024CB22924D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 6
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95345C78 : node = 0000024CB2292610
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 7
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95344178 : node = 0000024CB2291490
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 8
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D953449E8 : node = 0000024CB22915D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 9
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D95344B98 : node = 0000024CB2290090
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 10
+[LOG] SystemI::createSound                     :     filename = FMOD/Project/Brackeys/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024D9534A1A8 : node = 0000024CB2291710
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000024CB1F068D8.  list count = 11
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95348BB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95345AC8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB2291460
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Chaos Bass', format=5, channels=2, frequency=48000, lengthbytes=904800, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.457458.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95345AC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95346D58
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22924A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drums', format=5, channels=2, frequency=48000, lengthbytes=1223488, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.255768.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95346D58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95343FC8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB2292360
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Harmonica', format=5, channels=2, frequency=48000, lengthbytes=1237120, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.182678.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95343FC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95347C88
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22929A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bass', format=5, channels=2, frequency=48000, lengthbytes=850208, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.453888.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95347C88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D953444D8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB2291D20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fiddle', format=5, channels=2, frequency=48000, lengthbytes=1166304, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.133972.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D953444D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95346F08
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22910A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Chaos Banjo', format=5, channels=2, frequency=48000, lengthbytes=1418336, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.259064.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95346F08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95344688
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22925E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Chaos Harmonica', format=5, channels=2, frequency=48000, lengthbytes=1434976, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.147186.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95344688
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95345C78
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB2292720
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Perc', format=5, channels=2, frequency=48000, lengthbytes=1307168, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.331909.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95345C78
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95344178
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22915A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Normal', format=5, channels=2, frequency=48000, lengthbytes=1366400, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.678223.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95344178
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D953449E8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22916E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Chaos Drums', format=5, channels=2, frequency=48000, lengthbytes=1360672, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348633.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D953449E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95344B98
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB22901A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cowbell', format=5, channels=2, frequency=48000, lengthbytes=1726080, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.174835.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95344B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D9534A1A8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD/Project/Brackeys/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17150624
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 58144
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024CB2291820
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Banjo1', format=5, channels=2, frequency=48000, lengthbytes=1108736, lengthpcm=4887272, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.633026.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D9534A1A8
+[LOG] SoundI::release                          : Banjo1 (0000024CB6B669E8)
+[LOG] SoundI::release                          :     Banjo1 (0000024CB67FB588)
+[LOG] SoundI::release                          :     Banjo1 (0000024D01AE7118)
+[LOG] SoundI::release                          : Cowbell (0000024CB6B65E18)
+[LOG] SoundI::release                          :     Cowbell (0000024CB67FDFC8)
+[LOG] SoundI::release                          :     Cowbell (0000024D01AE6548)
+[LOG] SoundI::release                          : Perc (0000024CB6B66178)
+[LOG] SoundI::release                          :     Perc (0000024CB67FD948)
+[LOG] SoundI::release                          :     Perc (0000024D01AE2A38)
+[LOG] SoundI::release                          : Bass (0000024CB6B68D58)
+[LOG] SoundI::release                          :     Bass (0000024D00F7D1D8)
+[LOG] SoundI::release                          :     Bass (0000024CB6B6A348)
+[LOG] SoundI::release                          : Harmonica (0000024CB6B65758)
+[LOG] SoundI::release                          :     Harmonica (0000024D00F7B2F8)
+[LOG] SoundI::release                          :     Harmonica (0000024CB6B6ABB8)
+[LOG] SoundI::release                          : Drums (0000024CB6B68188)
+[LOG] SoundI::release                          :     Drums (0000024D00F7A798)
+[LOG] SoundI::release                          :     Drums (0000024CB6B6AA08)
+[LOG] SoundI::release                          : Normal (0000024CB6B64168)
+[LOG] SoundI::release                          :     Normal (0000024CB67FABC8)
+[LOG] SoundI::release                          :     Normal (0000024D01AE4DA8)
+[LOG] SoundI::release                          : Fiddle (0000024CB6B63088)
+[LOG] SoundI::release                          :     Fiddle (0000024D00F7DB98)
+[LOG] SoundI::release                          :     Fiddle (0000024CB6B6A4F8)
+[LOG] SoundI::release                          : farm_ambience (0000024CB6B689F8)
+[LOG] SoundI::release                          :     farm_ambience (0000024D00F7BFF8)
+[LOG] SoundI::release                          :     farm_ambience (0000024CB6B68338)
+[LOG] SoundI::release                          : Chaos Drums (0000024CB6B64678)
+[LOG] SoundI::release                          :     Chaos Drums (0000024CB67FD128)
+[LOG] SoundI::release                          :     Chaos Drums (0000024D01AE7CE8)
+[LOG] SoundI::release                          : Chaos Harmonica (0000024CB6B64EE8)
+[LOG] SoundI::release                          :     Chaos Harmonica (0000024CB67FE648)
+[LOG] SoundI::release                          :     Chaos Harmonica (0000024D01AE4898)
+[LOG] SoundI::release                          : Chaos Banjo (0000024CB6B633E8)
+[LOG] SoundI::release                          :     Chaos Banjo (0000024D00F78238)
+[LOG] SoundI::release                          :     Chaos Banjo (0000024D01AE81F8)
+[LOG] SoundI::release                          : Chaos Bass (0000024CB6B63E08)
+[LOG] SoundI::release                          :     Chaos Bass (0000024D00F7B7D8)
+[LOG] SoundI::release                          :     Chaos Bass (0000024CB6B66B98)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95348198
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95348198
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95348858
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95348858
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95347AD8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95347AD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95344328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95344328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D953484F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D953484F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95346848
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95346848
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95347928
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95347928
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95346698
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95346698
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95347FE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95347FE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95348198
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95348198
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024D95348858
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024D95348858
+[LOG] SoundI::release                          :  (0000024CE08DB308)
+[LOG] SoundI::release                          :     abduction (0000024CB67FA888)
+[LOG] SoundI::release                          :  (0000024CE08D7988)
+[LOG] SoundI::release                          :     crow5 (0000024D00F7CCF8)
+[LOG] SoundI::release                          :  (0000024CE08DBE88)
+[LOG] SoundI::release                          :     crow6 (0000024D00F78098)
+[LOG] SoundI::release                          :  (0000024CE08DAD48)
+[LOG] SoundI::release                          :     crow7 (0000024D00F78718)
+[LOG] SoundI::release                          :  (0000024CE08D4738)
+[LOG] SoundI::release                          :     crow1 (0000024D00F78578)
+[LOG] SoundI::release                          :  (0000024D66DD7FB8)
+[LOG] SoundI::release                          :     crow2 (0000024D00F7B978)
+[LOG] SoundI::release                          :  (0000024D66DE5BA8)
+[LOG] SoundI::release                          :     crow3 (0000024D00F7D038)
+[LOG] SoundI::release                          :  (0000024D66DE37B8)
+[LOG] SoundI::release                          :     crow4 (0000024D00F7BCB8)
+[LOG] SoundI::release                          :  (0000024D66DE5758)
+[LOG] SoundI::release                          :     pig3 (0000024D00F7A458)
+[LOG] SoundI::release                          : farm_ambience (0000024D95348BB8)
+[LOG] SoundI::release                          :     farm_ambience (0000024CE07930E8)
+[LOG] SoundI::release                          :     farm_ambience (0000024D95347E38)
+[LOG] SoundI::release                          : Banjo1 (0000024D9534A1A8)
+[LOG] SoundI::release                          :     Banjo1 (0000024CE07971E8)
+[LOG] SoundI::release                          :     Banjo1 (0000024D95348A08)
+[LOG] SoundI::release                          : Cowbell (0000024D95344B98)
+[LOG] SoundI::release                          :     Cowbell (0000024CE0796EA8)
+[LOG] SoundI::release                          :     Cowbell (0000024D95348858)
+[LOG] SoundI::release                          : Chaos Drums (0000024D953449E8)
+[LOG] SoundI::release                          :     Chaos Drums (0000024CE079B968)
+[LOG] SoundI::release                          :     Chaos Drums (0000024D95346848)
+[LOG] SoundI::release                          : Normal (0000024D95344178)
+[LOG] SoundI::release                          :     Normal (0000024CE079C4C8)
+[LOG] SoundI::release                          :     Normal (0000024D95343908)
+[LOG] SoundI::release                          : Perc (0000024D95345C78)
+[LOG] SoundI::release                          :     Perc (0000024CE0791548)
+[LOG] SoundI::release                          :     Perc (0000024D95348198)
+[LOG] SoundI::release                          : Chaos Harmonica (0000024D95344688)
+[LOG] SoundI::release                          :     Chaos Harmonica (0000024CE0793768)
+[LOG] SoundI::release                          :     Chaos Harmonica (0000024D95347FE8)
+[LOG] SoundI::release                          : Chaos Banjo (0000024D95346F08)
+[LOG] SoundI::release                          :     Chaos Banjo (0000024CE07935C8)
+[LOG] SoundI::release                          :     Chaos Banjo (0000024D95346698)
+[LOG] SoundI::release                          : Fiddle (0000024D953444D8)
+[LOG] SoundI::release                          :     Fiddle (0000024CE0791068)
+[LOG] SoundI::release                          :     Fiddle (0000024D953486A8)
+[LOG] SoundI::release                          : Bass (0000024D95347C88)
+[LOG] SoundI::release                          :     Bass (0000024CE0790EC8)
+[LOG] SoundI::release                          :     Bass (0000024D953484F8)
+[LOG] SoundI::release                          : Harmonica (0000024D95343FC8)
+[LOG] SoundI::release                          :     Harmonica (0000024CE0790848)
+[LOG] SoundI::release                          :     Harmonica (0000024D95344328)
+[LOG] SoundI::release                          : Drums (0000024D95346D58)
+[LOG] SoundI::release                          :     Drums (0000024CE07920A8)
+[LOG] SoundI::release                          :     Drums (0000024D95347AD8)
+[LOG] SoundI::release                          : Chaos Bass (0000024D95345AC8)
+[LOG] SoundI::release                          :     Chaos Bass (0000024CE07901C8)
+[LOG] SoundI::release                          :     Chaos Bass (0000024D95347928)
+[LOG] SoundI::release                          :  (0000024D66DE6A08)
+[LOG] SoundI::release                          :     pig4 (0000024D00F78D98)
+[LOG] SoundI::release                          :  (0000024D66DE62D8)
+[LOG] SoundI::release                          :     pig5 (0000024D00F79A98)
+[LOG] SoundI::release                          :  (0000024D66DE3928)
+[LOG] SoundI::release                          :     pig6 (0000024D00F7AFB8)
+[LOG] SoundI::release                          :  (0000024CE08DAEB8)
+[LOG] SoundI::release                          :     pig7 (0000024CB67FAF08)
+[LOG] SoundI::release                          :  (0000024D66DE0C98)
+[LOG] SoundI::release                          :     pig8 (0000024D00F798F8)
+[LOG] SoundI::release                          :  (0000024CE08DB478)
+[LOG] SoundI::release                          :     pig1 (0000024CB67FB3E8)
+[LOG] SoundI::release                          :  (0000024CE08D2A78)
+[LOG] SoundI::release                          :     pig2 (0000024D00F7CE98)
+[LOG] SoundI::release                          :  (0000024D66DE48F8)
+[LOG] SoundI::release                          :     bar (0000024D00F7C818)
+[LOG] SoundI::release                          :  (0000024D66DE3A98)
+[LOG] SoundI::release                          :     fail (0000024D00F7B158)
+[LOG] SoundI::release                          :  (0000024D66DE5A38)
+[LOG] SoundI::release                          :     ship_moves (0000024D00F7A5F8)
+[LOG] SoundI::release                          :  (0000024CE08D4008)
+[LOG] SoundI::release                          :     chick5 (0000024D00F7C338)
+[LOG] SoundI::release                          :  (0000024D66DE34D8)
+[LOG] SoundI::release                          :     chick6 (0000024D00F7A2B8)
+[LOG] SoundI::release                          :  (0000024CE08D94D8)
+[LOG] SoundI::release                          :     chick7 (0000024D00F7D9F8)
+[LOG] SoundI::release                          :  (0000024CE08D8C38)
+[LOG] SoundI::release                          :     chick8 (0000024D00F73AB8)
+[LOG] SoundI::release                          :  (0000024D66DE3368)
+[LOG] SoundI::release                          :     chick1 (0000024D00F7AE18)
+[LOG] SoundI::release                          :  (0000024CE08D8228)
+[LOG] SoundI::release                          :     chick2 (0000024D00F78F38)
+[LOG] SoundI::release                          :  (0000024D66DE44A8)
+[LOG] SoundI::release                          :     chick3 (0000024D00F7BB18)
+[LOG] SoundI::release                          :  (0000024D66DD7CD8)
+[LOG] SoundI::release                          :     chick4 (0000024D00F7A938)
+[LOG] SoundI::release                          :  (0000024D66DD9828)
+[LOG] SoundI::release                          :     horse3 (0000024D00F79418)
+[LOG] SoundI::release                          :  (0000024CE08D9D78)
+[LOG] SoundI::release                          :     horse4 (0000024D00F7DD38)
+[LOG] SoundI::release                          :  (0000024CE08D24B8)
+[LOG] SoundI::release                          :     horse5 (0000024D00F7C4D8)
+[LOG] SoundI::release                          :  (0000024CE08D7818)
+[LOG] SoundI::release                          :     horse6 (0000024D00F7C198)
+[LOG] SoundI::release                          :  (0000024D66DE6B78)
+[LOG] SoundI::release                          :     horse7 (0000024D00F783D8)
+[LOG] SoundI::release                          :  (0000024CE08D48A8)
+[LOG] SoundI::release                          :     horse8 (0000024D00F7C9B8)
+[LOG] SoundI::release                          :  (0000024CE08D9648)
+[LOG] SoundI::release                          :     horse1 (0000024D00F7CB58)
+[LOG] SoundI::release                          :  (0000024CE08DAA68)
+[LOG] SoundI::release                          :     horse2 (0000024D00F7D378)
+[LOG] SoundI::release                          :  (0000024D66DE0848)
+[LOG] SoundI::release                          :     cow5 (0000024D00F795B8)
+[LOG] SoundI::release                          :  (0000024CE08D8398)
+[LOG] SoundI::release                          :     cow6 (0000024D00F73C58)
+[LOG] SoundI::release                          :  (0000024CE08D8958)
+[LOG] SoundI::release                          :     cow7 (0000024D00F7D6B8)
+[LOG] SoundI::release                          :  (0000024CE08D8678)
+[LOG] SoundI::release                          :     cow8 (0000024D00F788B8)
+[LOG] SoundI::release                          :  (0000024D66DE6FC8)
+[LOG] SoundI::release                          :     cow1 (0000024D00F7D518)
+[LOG] SoundI::release                          :  (0000024D66DE41C8)
+[LOG] SoundI::release                          :     cow2 (0000024D00F79758)
+[LOG] SoundI::release                          :  (0000024D66DE4338)
+[LOG] SoundI::release                          :     cow3 (0000024D00F79C38)
+[LOG] SoundI::release                          :  (0000024CE08D7C68)
+[LOG] SoundI::release                          :     cow4 (0000024D00F78A58)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
