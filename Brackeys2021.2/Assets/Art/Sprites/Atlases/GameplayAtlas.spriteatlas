@@ -56,7 +56,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 5ec93e29823626341a5275883d7bd8b7, type: 3}
-    totalSpriteSurfaceArea: 3514015
+    totalSpriteSurfaceArea: 3722975
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -72,38 +72,45 @@ SpriteAtlas:
   - {fileID: 21300000, guid: eb898372022923d46a00ee51c1b59037, type: 3}
   - {fileID: 21300000, guid: 7b75c9b27d5931049b2c986a0ffdda7d, type: 3}
   - {fileID: 21300000, guid: 2f6fc543ff1d24a44aa722000391bde0, type: 3}
+  - {fileID: 21300000, guid: e8578263fa1f70c4cbe1e9b92873ac86, type: 3}
+  - {fileID: 21300000, guid: d41dee73fec308c4db25f86e2390e820, type: 3}
+  - {fileID: 21300000, guid: cde25c34a6f9fc441b5ee59f35796443, type: 3}
   - {fileID: 21300000, guid: f3297f44bbdd3e54c923fec3bffffe16, type: 3}
+  - {fileID: 21300000, guid: b0821d9452aaac546bbbdf838d46fb69, type: 3}
   - {fileID: 21300000, guid: e53b40b46a6e37746b5240baf233283d, type: 3}
+  - {fileID: 21300000, guid: f454a775446d8eb4fb2748e0df040f8d, type: 3}
+  - {fileID: 21300000, guid: 7c5906c527d900a43a3651ee32fc7386, type: 3}
   - {fileID: 21300000, guid: 61b0d5d503122504c8fbccbe02601b7a, type: 3}
+  - {fileID: 21300000, guid: 6acb9ae53852a1b4f8baf4e142a819ec, type: 3}
   - {fileID: 21300000, guid: ca550826957d5da44891cd61cb4f7400, type: 3}
+  - {fileID: 21300000, guid: 648ac366144de144b9b9568e1ae492fa, type: 3}
   - {fileID: 21300000, guid: a242776759f55f94eb3c125e435703bc, type: 3}
   - {fileID: 21300000, guid: 0a062da78a978f24ea0b4f1d95718cdf, type: 3}
   - {fileID: 21300000, guid: d081b1c7da6a10d419f7d4baf8560690, type: 3}
   - {fileID: 21300000, guid: 4fbf3138359bcc546bffa08990193015, type: 3}
+  - {fileID: 21300000, guid: de5f083818b27dc4ea4ffd7c6f3df19b, type: 3}
   - {fileID: 21300000, guid: ec347c090868f8e45abf63c229d2db70, type: 3}
   - {fileID: 21300000, guid: 2c424279dc27abc4e98b1e8f5d86b7ae, type: 3}
   - {fileID: 21300000, guid: 45a490997f97daa42842521a47964648, type: 3}
   - {fileID: 21300000, guid: c12522c99e37b4a40b89b97ebe6ce793, type: 3}
+  - {fileID: 21300000, guid: ffa1e0e9e1eda694c8285112fc3c590c, type: 3}
   - {fileID: 21300000, guid: 187b3f1a5df74bd41ae4ea35c5340dc3, type: 3}
+  - {fileID: 21300000, guid: 47fb667a69b1a6742a92628d25f18ccb, type: 3}
   - {fileID: 21300000, guid: 10edebaa71611914aa631ce12c17b620, type: 3}
   - {fileID: 21300000, guid: 50d8d0ca4224ea24e86631c3304a1892, type: 3}
+  - {fileID: 21300000, guid: 6e5774eabf736ba45972a7d1edf8ee75, type: 3}
   - {fileID: 21300000, guid: 5899fb1bd01a0454e8fb9fe69680553c, type: 3}
-  - {fileID: 21300000, guid: 2d6dce7b836faa84789467d59e84c179, type: 3}
   - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
-  - {fileID: 21300000, guid: de5084bb5e49e5443834f411d9bbfbeb, type: 3}
   - {fileID: 21300000, guid: 5ca2a4fb3a424784c963e60fe4225102, type: 3}
   - {fileID: 21300000, guid: ece90dacd46420c4ea85cfd00a167745, type: 3}
   - {fileID: 21300000, guid: a2c12dbc5d6829c478065e97ed6b7f7f, type: 3}
   - {fileID: 21300000, guid: 8043d0cc9a863f94f961dfe3eaab0aac, type: 3}
   - {fileID: 21300000, guid: 4d9b1ccc71bac75449d82f0e2286f3ab, type: 3}
   - {fileID: 21300000, guid: 0886f93d29e114f479b914998d44a6d9, type: 3}
-  - {fileID: 21300000, guid: 65ce6f9d5cb8b5b45a6b086104606ee3, type: 3}
   - {fileID: 21300000, guid: 1c4b1fed89055034fb8ae40a6b46e4b2, type: 3}
-  - {fileID: 21300000, guid: ca90be0ea78c3e340b5999d58d5f9c18, type: 3}
   - {fileID: 21300000, guid: ab2f1cee5a794bd4d97a4fe4b7c9e2cc, type: 3}
   - {fileID: 21300000, guid: 1eac4e5fe50a44144a4d1c4f71bedd4b, type: 3}
   - {fileID: 21300000, guid: 3f862ebfe4be17b4a94655a59cdeefbd, type: 3}
-  - {fileID: 21300000, guid: f0c202dfd0a26d344b78e280d2d45f13, type: 3}
   m_PackedSpriteNamesToIndex:
   - HUD_Bar_Chaos
   - Duck01
@@ -115,38 +122,45 @@ SpriteAtlas:
   - Bush
   - Hud3PlaceHolder_2
   - Pig
+  - LamaChiqueiro
+  - Farmer5
+  - Farmer4
   - Tree2
+  - ChickenStatue
   - Cow03V2
+  - Chicken03
+  - Chicken05
   - Tree
+  - Farmer
   - Pig2
+  - Farmer2
   - Horse
   - CrowStand_PlaceHolder
   - Porteira
   - Trunk
+  - TreeBatch
   - HUD_Bar_Fill
   - BillBoard4_PlaceHolder
   - Chicken
   - fade
+  - Chicken04
   - testeLuz
+  - Stable
   - Lake
   - Duck02
+  - Farmer3
   - Cow01V2
-  - Stable
   - Billboard
-  - BillBoard2_PlaceHolder
   - Cow02V2
   - blob_pivot_down
   - Ufov2
   - Cow04V2
   - CrowFlying_PlaceHolder
   - Corn_Placeholder
-  - Farmer
   - Fence1
-  - BillBoard3_PlaceHolder
   - Fence2
   - blob
   - PoPUpV1PlaceHolder
-  - Hud3PlaceHolder
   m_RenderDataMap: {}
   m_Tag: GameplayAtlas
   m_IsVariant: 0
