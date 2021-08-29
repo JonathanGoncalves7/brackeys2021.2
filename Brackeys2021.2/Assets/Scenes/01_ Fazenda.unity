@@ -85658,7 +85658,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintPanel: {fileID: 7641202274065007689}
   hintPanelText: {fileID: 7641202274065007688}
-  Dicas_M1: []
+  Dicas_M1:
+  - The spy is metamorphed as a creature with four hooves.
+  - 'Caught molly eating frogs again yesterday. '
+  - Spy is afraid he might be selected for meat harvest.
+  - The spy is often complaining about being forced to eat grass.
+  - Dont eat bacon.
+  - cluck, cluck, cluck
+  - "Hmm, Buttercup\u2019s milk has turned green again, better take her to the vet."
   Dicas_M2: []
   Dicas_M3: []
   Dicas_M4: []
