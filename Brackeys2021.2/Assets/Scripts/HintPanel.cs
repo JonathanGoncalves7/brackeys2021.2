@@ -10,6 +10,12 @@ public class HintPanel : MonoBehaviour
     private GameObject hintPanel;
 
     [SerializeField]
+    private GameObject checklistPanel;
+
+    [SerializeField]
+    private TMP_Text[] DicasChecklist;
+
+    [SerializeField]
     private TMP_Text hintPanelText;
 
     [SerializeField]
@@ -20,6 +26,10 @@ public class HintPanel : MonoBehaviour
     private string[] Dicas_M3;
     [SerializeField]
     private string[] Dicas_M4;
+
+
+
+
 
     private void Start()
     {
@@ -33,6 +43,8 @@ public class HintPanel : MonoBehaviour
         {
             hintPanel.SetActive(true);
             hintPanelText.text = Dicas_M1[hintNumber];
+            DicasChecklist[hintNumber].text = Dicas_M1[hintNumber];
+
         }
         if (mission == 2)
         {
