@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PlayerVictory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject victoryPanel;
 
-    // Update is called once per frame
-    void Update()
+    public void VictoryGame()
     {
-        
+        victoryPanel.SetActive(true);
     }
 }

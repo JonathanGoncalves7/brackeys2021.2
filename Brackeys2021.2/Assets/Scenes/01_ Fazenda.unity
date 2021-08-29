@@ -60011,7 +60011,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 63c3dcc4f9c90774ea24fd13c633f4a5, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &1488732347
@@ -85524,6 +85524,14 @@ PrefabInstance:
       propertyPath: hintPanelText
       value: 
       objectReference: {fileID: 7641202274065007688}
+    - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: hintPanel
+      value: 
+      objectReference: {fileID: 7641202274065007689}
+    - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: hintPanelText
+      value: 
+      objectReference: {fileID: 7641202274065007688}
     - target: {fileID: 1576437000555731588, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.4
@@ -85532,6 +85540,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.17
       objectReference: {fileID: 0}
+    - target: {fileID: 1767477616228271751, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 260674501}
     - target: {fileID: 2037054563341694795, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -85544,6 +85556,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2309896548315501540, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: victoryPanel
+      value: 
+      objectReference: {fileID: 1488732344}
     - target: {fileID: 3123551634305127462, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_Color.b
       value: 0.41361904
@@ -85674,51 +85690,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021d8269b4056c74997daba27d97319f, type: 3}
---- !u!1 &7992725098436147 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7992725608949577, guid: 021d8269b4056c74997daba27d97319f, type: 3}
-  m_PrefabInstance: {fileID: 7992725098436146}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7992725098436148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7992725098436147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02cf7484fc6640df9a08c8e88f1ef90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hintPanel: {fileID: 7641202274065007689}
-  hintPanelText: {fileID: 7641202274065007688}
-  Dicas_M1:
-  - The spy is metamorphed as a creature with four hooves.
-  - 'Caught molly eating frogs again yesterday. '
-  - Spy is afraid he might be selected for meat harvest.
-  - The spy is often complaining about being forced to eat grass.
-  - Dont eat bacon.
-  - cluck, cluck, cluck
-  - "Hmm, Buttercup\u2019s milk has turned green again, better take her to the vet."
-  Dicas_M2: []
-  Dicas_M3: []
-  Dicas_M4: []
---- !u!114 &7992725098436149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7992725098436147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74577e0ab3f1da44bb749dbc73d354b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 260674501}
-  timeToGameOver: 10
-  restTimeToGameOver: 0
 --- !u!1001 &591373094571456131
 PrefabInstance:
   m_ObjectHideFlags: 0

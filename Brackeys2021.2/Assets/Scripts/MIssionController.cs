@@ -17,10 +17,10 @@ public class MIssionController : MonoBehaviour
 
     void hintChoose()
     {
-       if(Regex.IsMatch(transform.name, "Cow"))
-       {
+        if (Regex.IsMatch(transform.name, "Cow"))
+        {
             Statics.hintNumber = 1;
-       }
+        }
 
         if (Regex.IsMatch(transform.name, "Horse"))
         {
@@ -56,23 +56,24 @@ public class MIssionController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             if (isRightTarget)
-            { 
+            {
                 Statics.mission++;
+                collision.gameObject.GetComponent<PlayerVictory>().VictoryGame();
 
             }
             else if (!isRightTarget)
             {
                 hintChoose();
                 Debug.Log(Statics.hintNumber + "  " + Statics.nextHintNumber);
-                if(Statics.hintNumber == Statics.nextHintNumber)
+                if (Statics.hintNumber == Statics.nextHintNumber)
                 {
                     hintPanel.CallShowHint();
                     Statics.nextHintNumber++;
                 }
-                
+
             }
         }
     }

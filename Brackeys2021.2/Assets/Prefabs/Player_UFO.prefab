@@ -180,6 +180,9 @@ GameObject:
   - component: {fileID: 6162870619135472065}
   - component: {fileID: 1477175707690661985}
   - component: {fileID: 5178869261188993986}
+  - component: {fileID: 1215894168405819433}
+  - component: {fileID: 1767477616228271751}
+  - component: {fileID: 2309896548315501540}
   m_Layer: 0
   m_Name: Player_UFO
   m_TagString: Player
@@ -318,6 +321,58 @@ MonoBehaviour:
   isPlayingShipMoves: 0
   isPlayingAbduction: 0
   isPlayingNoPower: 0
+--- !u!114 &1215894168405819433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992725608949577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02cf7484fc6640df9a08c8e88f1ef90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hintPanel: {fileID: 0}
+  hintPanelText: {fileID: 0}
+  Dicas_M1:
+  - The spy is metamorphed as a creature with four hooves.
+  - 'Caught molly eating frogs again yesterday. '
+  - Spy is afraid he might be selected for meat harvest.
+  - The spy is often complaining about being forced to eat grass.
+  - Dont eat bacon.
+  - cluck, cluck, cluck
+  - "Hmm, Buttercup\u2019s milk has turned green again, better take her to the vet."
+  Dicas_M2: []
+  Dicas_M3: []
+  Dicas_M4: []
+--- !u!114 &1767477616228271751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992725608949577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74577e0ab3f1da44bb749dbc73d354b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 0}
+  timeToGameOver: 10
+  restTimeToGameOver: 0
+--- !u!114 &2309896548315501540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992725608949577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ea22e8475e13e4aa91f9cb94005775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7992725753855122
 GameObject:
   m_ObjectHideFlags: 0

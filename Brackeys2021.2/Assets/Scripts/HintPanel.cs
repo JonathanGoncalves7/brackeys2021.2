@@ -21,23 +21,18 @@ public class HintPanel : MonoBehaviour
     [SerializeField]
     private string[] Dicas_M4;
 
-
-
-
-
     private void Start()
     {
-       StartCoroutine(ShowHint(Statics.mission, Statics.hintNumber));
+        StartCoroutine(ShowHint(Statics.mission, Statics.hintNumber));
     }
 
     public IEnumerator ShowHint(int mission, int hintNumber)
     {
 
-        if(mission == 1)
+        if (mission == 1)
         {
             hintPanel.SetActive(true);
             hintPanelText.text = Dicas_M1[hintNumber];
-
         }
         if (mission == 2)
         {
