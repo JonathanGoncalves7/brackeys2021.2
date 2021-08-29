@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001D245D11CD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002B2B6646868 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +18,55 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          : Banjo1 (000002B2B38A3D58)
+[LOG] SoundI::release                          :     Banjo1 (000002B2B07DA258)
+[LOG] SoundI::release                          :     Banjo1 (000002B2B38A4928)
+[LOG] SoundI::release                          : Cowbell (000002B2B38A7868)
+[LOG] SoundI::release                          :     Cowbell (000002B2B07DA738)
+[LOG] SoundI::release                          :     Cowbell (000002B2B38A4778)
+[LOG] SoundI::release                          : Chaos Drums (000002B2B38A8AF8)
+[LOG] SoundI::release                          :     Chaos Drums (000002B2B07D9558)
+[LOG] SoundI::release                          :     Chaos Drums (000002B2B38A45C8)
+[LOG] SoundI::release                          : Normal (000002B2B38A8288)
+[LOG] SoundI::release                          :     Normal (000002B2B07DAC18)
+[LOG] SoundI::release                          :     Normal (000002B2B38A40B8)
+[LOG] SoundI::release                          : Perc (000002B2B38A7F28)
+[LOG] SoundI::release                          :     Perc (000002B2B07DA0B8)
+[LOG] SoundI::release                          :     Perc (000002B2B38A3848)
+[LOG] SoundI::release                          : Chaos Harmonica (000002B2B38A85E8)
+[LOG] SoundI::release                          :     Chaos Harmonica (000002B2B07D9A38)
+[LOG] SoundI::release                          :     Chaos Harmonica (000002B2B38A3698)
+[LOG] SoundI::release                          : Chaos Banjo (000002B2B38A80D8)
+[LOG] SoundI::release                          :     Chaos Banjo (000002B2B07D93B8)
+[LOG] SoundI::release                          :     Chaos Banjo (000002B2B38A34E8)
+[LOG] SoundI::release                          : Fiddle (000002B2B38A6278)
+[LOG] SoundI::release                          :     Fiddle (000002B2B07D9218)
+[LOG] SoundI::release                          :     Fiddle (000002B2B38A3188)
+[LOG] SoundI::release                          : Bass (000002B2B38A6C98)
+[LOG] SoundI::release                          :     Bass (000002B2B07D9F18)
+[LOG] SoundI::release                          :     Bass (000002B2B38A9518)
+[LOG] SoundI::release                          : Harmonica (000002B2B38A5858)
+[LOG] SoundI::release                          :     Harmonica (000002B2B07D9D78)
+[LOG] SoundI::release                          :     Harmonica (000002B2B38A9368)
+[LOG] SoundI::release                          : Drums (000002B2B38A91B8)
+[LOG] SoundI::release                          :     Drums (000002B2B07DA8D8)
+[LOG] SoundI::release                          :     Drums (000002B2B38A2FD8)
+[LOG] SoundI::release                          : Chaos Bass (000002B2B38A6AE8)
+[LOG] SoundI::release                          :     Chaos Bass (000002B2B5A98228)
+[LOG] SoundI::release                          :     Chaos Bass (000002B2B38A8E58)
+[LOG] SoundI::release                          :  (000002B2B26B98D8)
+[LOG] SoundI::release                          :     ship_moves (000002B2B5A98F28)
+[LOG] SoundI::release                          :  (000002B2B26B95F8)
+[LOG] SoundI::release                          :     abduction (000002B2B5A98568)
+[LOG] SoundI::release                          :  (000002B2B26B9488)
+[LOG] SoundI::release                          :     fail (000002B2B5A983C8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
