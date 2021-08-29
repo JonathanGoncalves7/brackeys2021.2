@@ -56,25 +56,21 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 2b1ed34aac776de469b6dd942ffa1658, type: 3}
-    totalSpriteSurfaceArea: 379804
+    totalSpriteSurfaceArea: 347036
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 711e9011fe5b1ff4dbcf77063cbe92cb, type: 3}
   - {fileID: 21300000, guid: 28788e5147070dd48be6a92464fbe985, type: 3}
   - {fileID: 21300000, guid: 53a2d7f23ea0a6a4792ee81a5c33e45f, type: 3}
   - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
   - {fileID: 21300000, guid: 3cc3e80c2a1acb54ea94e6bbf9984b60, type: 3}
-  - {fileID: 21300000, guid: 00e8b76e1b34bc34f881a7c0ad7697fc, type: 3}
   m_PackedSpriteNamesToIndex:
-  - spacebar
   - Option2
   - Option
   - Billboard
   - Start
-  - move_icon
   m_RenderDataMap: {}
   m_Tag: MenuAtlas
   m_IsVariant: 0
