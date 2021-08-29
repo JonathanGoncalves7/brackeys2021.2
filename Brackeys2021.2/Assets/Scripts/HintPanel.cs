@@ -13,6 +13,12 @@ public class HintPanel : MonoBehaviour
     private TMP_Text hintPanelText;
 
     [SerializeField]
+    private float timeMessage = 8f;
+
+    [SerializeField] private GameObject prop_final;
+    [SerializeField] private GameObject wayPoints;
+
+    [SerializeField]
     private string[] Dicas_M1;
     [SerializeField]
     private string[] Dicas_M2;
@@ -53,13 +59,20 @@ public class HintPanel : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(timeMessage);
         hintPanel.SetActive(false);
 
     }
 
     public void CallShowHint()
     {
+        if (Statics.hintNumber == (Dicas_M1.Length - 1))
+        {
+            GameObject final_waypoints = wayPoints.GetComponent<Waypoints>().GetRandom();
+            GameObject newAnimal = Instantiate(prop_final, final_waypoints.transform.position, Quaternion.identity);
+            newAnimal.GetComponent<WaypointWalker>().waypoints = wayPoints.GetComponent<Waypoints>();
+        }
+
         StartCoroutine(ShowHint(Statics.mission, Statics.hintNumber));
     }
 

@@ -73,7 +73,6 @@ public class MIssionController : MonoBehaviour
                     hintPanel.CallShowHint();
                     Statics.nextHintNumber++;
                 }
-
             }
         }
     }

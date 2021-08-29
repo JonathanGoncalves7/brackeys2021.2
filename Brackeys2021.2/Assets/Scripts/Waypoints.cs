@@ -13,4 +13,9 @@ public class Waypoints : MonoBehaviour
             waypoints.Add(transform.GetChild(i).gameObject);
         }
     }
+
+    public GameObject GetRandom()
+    {
+        return waypoints[Random.Range(0, waypoints.Count - 1)];
+    }
 }

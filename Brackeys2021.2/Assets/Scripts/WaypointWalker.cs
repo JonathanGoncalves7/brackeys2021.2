@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class WaypointWalker : MonoBehaviour
 {
-    [SerializeField] private Waypoints waypoints;
+    [SerializeField] public Waypoints waypoints;
     [SerializeField] private float restWalkCooldown = 0f;
 
     private int currentWaypoint;
