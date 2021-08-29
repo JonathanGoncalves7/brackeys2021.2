@@ -41,6 +41,10 @@ public class StartGame : MonoBehaviour
 
         fadeAnimation.PlayQueued(fadeOutClip.name);
         Destroy(this.gameObject, 2f);
+    }
 
+    public void LoadFazenda()
+    {
+        SceneManager.LoadScene(1);
     }
 }
