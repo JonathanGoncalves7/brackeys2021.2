@@ -14,6 +14,11 @@ public class CaosManager : MonoBehaviour
     [Header("Animals Speed")]
     [SerializeField] private float speed = 3.5f;
     [SerializeField] [Range(0, 75)] private int percentageSpeedMaximumChaos = 50;
+    [Space]
+    [Header("Animals Sounds")]
+    [SerializeField] private float minTimeToStartSounds = 4f;
+    [SerializeField] private float maxTimeToStartSounds = 8f;
+    [SerializeField] [Range(0, 75)] private float percentageReduceTimeMaximumChaos = 50f;
 
     public static CaosManager Instance { get; private set; }
 
@@ -95,5 +100,19 @@ public class CaosManager : MonoBehaviour
     public int GetPercentageSpeedMaximumChaos()
     {
         return percentageSpeedMaximumChaos;
+    }
+
+    public float GetMinTimeToStartSounds()
+    {
+        return minTimeToStartSounds;
+    }
+
+    public float GetMaxTimeToStartSounds()
+    {
+        return maxTimeToStartSounds;
+    }
+    public float GetPercentageReduceTimeSoundsMaximumChaos()
+    {
+        return percentageReduceTimeMaximumChaos;
     }
 }

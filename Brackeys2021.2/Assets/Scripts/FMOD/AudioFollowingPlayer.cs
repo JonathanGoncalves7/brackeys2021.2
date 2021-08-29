@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class AudioFollowingPlayer : MonoBehaviour
 {
-    [SerializeField] private float minTimeToStart = 4f;
-    [SerializeField] private float maxTimeToStart = 8f;
     [SerializeField] private Vector3 area;
     [SerializeField] private string pathAudio;
     private Transform Player;
@@ -27,7 +25,9 @@ public class AudioFollowingPlayer : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         audioLoop = FMODUnity.RuntimeManager.CreateInstance("event:/" + pathAudio);
 
-        timeLeftToStart = Random.Range(minTimeToStart, maxTimeToStart);
+        timeLeftToStart = Random.Range(
+            CaosManager.Instance.GetMinTimeToStartSounds(),
+            CaosManager.Instance.GetMaxTimeToStartSounds());
     }
 
 
@@ -58,7 +58,7 @@ public class AudioFollowingPlayer : MonoBehaviour
         timeLeftToStart -= Time.deltaTime;
         if (timeLeftToStart <= 0)
         {
-            timeLeftToStart = Random.Range(minTimeToStart, maxTimeToStart);
+            timeLeftToStart = GetTime();
 
             audioLoop.start();
         }
@@ -84,5 +84,14 @@ public class AudioFollowingPlayer : MonoBehaviour
     private void OnDestroy()
     {
         audioLoop.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    float GetTime()
+    {
+        float time = Random.Range(CaosManager.Instance.GetMinTimeToStartSounds(), CaosManager.Instance.GetMaxTimeToStartSounds());
+        float currentCaosPoints = CaosManager.Instance.GetCaosPoints();
+        float porcentage = CaosManager.Instance.GetPercentageReduceTimeSoundsMaximumChaos();
+
+        return time - (time * porcentage * currentCaosPoints / 100);
     }
 }
