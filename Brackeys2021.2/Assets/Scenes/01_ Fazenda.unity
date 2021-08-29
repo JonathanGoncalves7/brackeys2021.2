@@ -61434,8 +61434,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715186258}
-  - component: {fileID: 1715186257}
   - component: {fileID: 1715186259}
+  - component: {fileID: 1715186260}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -61443,51 +61443,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1715186257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715186256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/MSC/music
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: Fiddle
-    Value: 1
-  - Name: No Chaos_Drums
-    Value: 1
-  - Name: No Chaos_Bass
-    Value: 1
-  - Name: No_Chaos Harmonica
-    Value: 1
-  - Name: No Chaos_Banjo
-    Value: 1
-  - Name: Chaos_Drums
-    Value: 0
-  - Name: Chaos_Bass
-    Value: 0
-  - Name: Chaos_Harmonica
-    Value: 0
-  - Name: Chaos_Banjo
-    Value: 0
-  - Name: Chaos_Perc
-    Value: 0
-  - Name: Chaos_Bar_Very_High
-    Value: 0
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!4 &1715186258
 Transform:
   m_ObjectHideFlags: 0
@@ -61525,6 +61480,18 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &1715186260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715186256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9824fc9f11f3040b9565dc39e86a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1717808944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3210838042504795057, guid: 66862342eaabdb845a17471eb519ee65, type: 3}
