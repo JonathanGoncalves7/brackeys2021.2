@@ -6836,6 +6836,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 84f691ff97b24b544a451467fdf5b5b4, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 84f691ff97b24b544a451467fdf5b5b4, type: 2}
+  - {fileID: 7400000, guid: eb96c4b0e13fae24cbdac11d3358ef7a, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -8309,6 +8310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2116112712}
   - component: {fileID: 2116112713}
+  - component: {fileID: 2116112714}
   m_Layer: 0
   m_Name: Visual_Billboard
   m_TagString: Target
@@ -8381,6 +8383,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &2116112714
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116112711}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a935c75824f2f8f489015c59b68fe075, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a935c75824f2f8f489015c59b68fe075, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &7992725098436146
 PrefabInstance:
   m_ObjectHideFlags: 0
