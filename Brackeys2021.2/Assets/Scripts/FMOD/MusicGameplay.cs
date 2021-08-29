@@ -24,6 +24,14 @@ public class MusicGameplay : MonoBehaviour
     const string CHAOS_PERC_PARAM = "Chaos_Perc";
     const string CHAOS_BAR_VERY_HIHG_PARAM = "Chaos_Bar_Very_High";
 
+
+    [SerializeField] [Range(0, 1)] private float chaosDrums = 0.1f;
+    [SerializeField] [Range(0, 1)] private float chaosBass = 0.2f;
+    [SerializeField] [Range(0, 1)] private float chaosHarmonica = 0.3f;
+    [SerializeField] [Range(0, 1)] private float chaosBanjo = 0.4f;
+    [SerializeField] [Range(0, 1)] private float chaosPerc = 0.5f;
+    [SerializeField] [Range(0, 1)] private float chaosBarVeryHigh = 0.9f;
+
     private FMOD.Studio.EventInstance music;
 
     void Start()
@@ -40,27 +48,23 @@ public class MusicGameplay : MonoBehaviour
 
     void NoChaosMusics(int play)
     {
-        music.setParameterByName(NO_CHAOS_DRUMS_PARAM, play);
-        music.setParameterByName(NO_CHAOS_BASS_PARAM, play);
-        music.setParameterByName(NO_CHAOS_HARMONICA_PARAM, play);
+        float currentChaos = CaosManager.Instance.GetCaosPoints();
+
+        music.setParameterByName(NO_CHAOS_DRUMS_PARAM, PlayingLow(play, currentChaos, chaosDrums));
+        music.setParameterByName(NO_CHAOS_BASS_PARAM, PlayingLow(play, currentChaos, chaosBass));
+        music.setParameterByName(NO_CHAOS_HARMONICA_PARAM, PlayingLow(play, currentChaos, chaosHarmonica));
     }
 
     void ChaosMusics(int play)
     {
-        music.setParameterByName(CHAOS_DRUMS_PARAM, play);
-        music.setParameterByName(CHAOS_BASS_PARAM, play);
-        music.setParameterByName(CHAOS_HARMONICA_PARAM, play);
-        music.setParameterByName(CHAOS_BANJO_PARAM, play);
-        music.setParameterByName(CHAOS_PERC_PARAM, play);
+        float currentChaos = CaosManager.Instance.GetCaosPoints();
 
-        if (play == START && (CaosManager.Instance.GetCaosPoints() >= 0.9f))
-        {
-            music.setParameterByName(CHAOS_BAR_VERY_HIHG_PARAM, START);
-        }
-        else
-        {
-            music.setParameterByName(CHAOS_BAR_VERY_HIHG_PARAM, STOP);
-        }
+        music.setParameterByName(CHAOS_DRUMS_PARAM, PlayingHighOrEqual(play, currentChaos, chaosDrums));
+        music.setParameterByName(CHAOS_BASS_PARAM, PlayingHighOrEqual(play, currentChaos, chaosBass));
+        music.setParameterByName(CHAOS_HARMONICA_PARAM, PlayingHighOrEqual(play, currentChaos, chaosHarmonica));
+        music.setParameterByName(CHAOS_BANJO_PARAM, PlayingHighOrEqual(play, currentChaos, chaosBanjo));
+        music.setParameterByName(CHAOS_PERC_PARAM, PlayingHighOrEqual(play, currentChaos, chaosPerc));
+        music.setParameterByName(CHAOS_BAR_VERY_HIHG_PARAM, PlayingHighOrEqual(play, currentChaos, chaosBarVeryHigh));
     }
 
     private void Update()
@@ -80,6 +84,30 @@ public class MusicGameplay : MonoBehaviour
     private void OnDestroy()
     {
         music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    int PlayingHighOrEqual(int play, float chaos, float paramValue)
+    {
+        if (play == START && chaos >= paramValue)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    int PlayingLow(int play, float chaos, float paramValue)
+    {
+        if (play == START && chaos < paramValue)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
 }
