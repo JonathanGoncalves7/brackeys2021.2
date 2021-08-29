@@ -19,4 +19,9 @@ public class LoadNextScene : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+
+        public void LoadFazenda()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
