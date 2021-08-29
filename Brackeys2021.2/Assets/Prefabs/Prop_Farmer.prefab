@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7477151342799421764}
   - component: {fileID: 7477151342799421766}
   - component: {fileID: 7477151342799421763}
+  - component: {fileID: 2648910826085204257}
   m_Layer: 0
   m_Name: Prop_Farmer
   m_TagString: Target
@@ -145,6 +146,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 0.2}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2648910826085204257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7477151342799421767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7df4589fb9cd49829fa58bc05e51179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRightTarget: 0
 --- !u!1 &9099633545768479718
 GameObject:
   m_ObjectHideFlags: 0

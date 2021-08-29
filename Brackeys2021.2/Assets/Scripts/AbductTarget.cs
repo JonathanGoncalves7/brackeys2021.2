@@ -8,6 +8,7 @@ public class AbductTarget : MonoBehaviour
 
     [SerializeField] private float speed = 1f;
     [SerializeField] private float castingRadius = 2f;
+    public GameObject effectAbduction;
 
     private Vector3 origin;
     private Vector3 direction;
@@ -28,7 +29,12 @@ public class AbductTarget : MonoBehaviour
     void Abduction()
     {
         if (playerController.GetAbducaoPoints() <= 0)
+        {
+            effectAbduction.SetActive(false);
             return;
+        }
+
+        effectAbduction.SetActive(Input.GetKey(KeyCode.Space));
 
         origin = raycastOrigin.position;
         direction = Vector3.down;

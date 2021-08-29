@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\HintPanel.cs" />
+     <Compile Include="Assets\Scripts\DicasController.cs" />
      <Compile Include="Assets\Scripts\FMOD\VcaController.cs" />
      <Compile Include="Assets\Scripts\WaypointWalker.cs" />
      <Compile Include="Assets\Scripts\Statics.cs" />
