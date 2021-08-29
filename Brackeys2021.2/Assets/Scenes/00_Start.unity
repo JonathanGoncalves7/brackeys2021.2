@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &83269304
 RectTransform:
   m_ObjectHideFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &424623937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,9 +897,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 1
   sceneID: 1
-  button: {fileID: 0}
-  button2: {fileID: 0}
-  fadeAnimation: {fileID: 0}
+  button: {fileID: 868665390}
+  button2: {fileID: 83269303}
+  fadeAnimation: {fileID: 424623942}
   fadeInClip: {fileID: 7400000, guid: 47ab80b68a30d404aa5f3fa60dfc1a72, type: 2}
   fadeOutClip: {fileID: 7400000, guid: a7f6450456628374fb6a8d80df9301f4, type: 2}
 --- !u!65 &480383408
@@ -1311,7 +1311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &868665391
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7159,7 +7159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1242428648
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8025,9 +8025,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 2
   sceneID: 2
-  button: {fileID: 0}
-  button2: {fileID: 0}
-  fadeAnimation: {fileID: 0}
+  button: {fileID: 868665390}
+  button2: {fileID: 83269303}
+  fadeAnimation: {fileID: 424623942}
   fadeInClip: {fileID: 7400000, guid: 47ab80b68a30d404aa5f3fa60dfc1a72, type: 2}
   fadeOutClip: {fileID: 7400000, guid: a7f6450456628374fb6a8d80df9301f4, type: 2}
 --- !u!65 &1876953270

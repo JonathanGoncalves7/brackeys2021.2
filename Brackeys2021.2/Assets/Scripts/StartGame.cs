@@ -27,11 +27,7 @@ public class StartGame : MonoBehaviour
 
     public void OnStartClick(int index)
     {
-        //    button.SetActive(false);
-        //   button2.SetActive(false);
         DontDestroyOnLoad(gameObject);
-
-        //              fadeAnimation.clip = fadeInClip;
 
         sceneID = index;
         StartCoroutine(LoadSceneAsync());
@@ -39,10 +35,10 @@ public class StartGame : MonoBehaviour
 
     IEnumerator LoadSceneAsync()
     {
-        //   fadeAnimation.clip = fadeInClip;
-        //  fadeAnimation.Play();
+        fadeAnimation.clip = fadeInClip;
+        fadeAnimation.Play();
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneID);
 
@@ -52,8 +48,8 @@ public class StartGame : MonoBehaviour
             yield return null;
         }
 
-        //  fadeAnimation.PlayQueued(fadeOutClip.name);
-        Destroy(this.gameObject, 2f);
+        fadeAnimation.PlayQueued(fadeOutClip.name);
+        Destroy(this.gameObject, 10f);
     }
 
     public void LoadFazenda()
