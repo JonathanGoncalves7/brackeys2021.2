@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001D245D11CD8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D26F003558 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +18,150 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D1B96AC0B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D1B96AC0B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D1B96A6AA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D1B96A6AA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D1B96A6C58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D1B96A6C58
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D1B96A74C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D1B96A74C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D1B96ADD68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D1B96ADD68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D1B96AEAE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D1B96AEAE8
+[LOG] SoundI::release                          : Banjo1 (000001D1B96ABBA8)
+[LOG] SoundI::release                          :     Banjo1 (000001D24D97F448)
+[LOG] SoundI::release                          :     Banjo1 (000001D1B96ACC88)
+[LOG] SoundI::release                          : Cowbell (000001D1B96AA5B8)
+[LOG] SoundI::release                          :     Cowbell (000001D24D97E8E8)
+[LOG] SoundI::release                          :     Cowbell (000001D1B96AEAE8)
+[LOG] SoundI::release                          : Chaos Drums (000001D1B96AAC78)
+[LOG] SoundI::release                          :     Chaos Drums (000001D24D983BC8)
+[LOG] SoundI::release                          :     Chaos Drums (000001D1B96ADD68)
+[LOG] SoundI::release                          : Normal (000001D1B96A7678)
+[LOG] SoundI::release                          :     Normal (000001D24D984DA8)
+[LOG] SoundI::release                          :     Normal (000001D1B96A6FB8)
+[LOG] SoundI::release                          : Perc (000001D1B96A9328)
+[LOG] SoundI::release                          :     Perc (000001D24D984C08)
+[LOG] SoundI::release                          :     Perc (000001D1B96A74C8)
+[LOG] SoundI::release                          : Chaos Harmonica (000001D1B96A63E8)
+[LOG] SoundI::release                          :     Chaos Harmonica (000001D24D982EC8)
+[LOG] SoundI::release                          :     Chaos Harmonica (000001D1B96A6C58)
+[LOG] SoundI::release                          : Chaos Banjo (000001D1B96A8C68)
+[LOG] SoundI::release                          :     Chaos Banjo (000001D24D9840A8)
+[LOG] SoundI::release                          :     Chaos Banjo (000001D1B96A6AA8)
+[LOG] SoundI::release                          : Fiddle (000001D1B96AB9F8)
+[LOG] SoundI::release                          :     Fiddle (000001D24D982508)
+[LOG] SoundI::release                          :     Fiddle (000001D1B96AC418)
+[LOG] SoundI::release                          : Bass (000001D1B96A7168)
+[LOG] SoundI::release                          :     Bass (000001D24D9848C8)
+[LOG] SoundI::release                          :     Bass (000001D1B96A6748)
+[LOG] SoundI::release                          : Harmonica (000001D1B96A83F8)
+[LOG] SoundI::release                          :     Harmonica (000001D24D97CEE8)
+[LOG] SoundI::release                          :     Harmonica (000001D1B96A6598)
+[LOG] SoundI::release                          : Drums (000001D1B96AA918)
+[LOG] SoundI::release                          :     Drums (000001D24D97E408)
+[LOG] SoundI::release                          :     Drums (000001D1B96AC268)
+[LOG] SoundI::release                          : Chaos Bass (000001D1B96AB698)
+[LOG] SoundI::release                          :     Chaos Bass (000001D24D978DE8)
+[LOG] SoundI::release                          :     Chaos Bass (000001D1B96AC0B8)
+[LOG] SoundI::release                          : farm_ambience (000001D1B96AB338)
+[LOG] SoundI::release                          :     farm_ambience (000001D24D97ACC8)
+[LOG] SoundI::release                          :     farm_ambience (000001D1B96AA258)
+[LOG] SoundI::release                          :  (000001D26ED00A98)
+[LOG] SoundI::release                          :     abduction (000001D24D982D28)
+[LOG] SoundI::release                          :  (000001D26ECFFF18)
+[LOG] SoundI::release                          :     crow5 (000001D24D9819A8)
+[LOG] SoundI::release                          :  (000001D26ED00648)
+[LOG] SoundI::release                          :     crow6 (000001D24D97D708)
+[LOG] SoundI::release                          :  (000001D26ED00368)
+[LOG] SoundI::release                          :     crow7 (000001D24D980E48)
+[LOG] SoundI::release                          :  (000001D26ECFFDA8)
+[LOG] SoundI::release                          :     crow1 (000001D24D97D088)
+[LOG] SoundI::release                          :  (000001D26ED0D998)
+[LOG] SoundI::release                          :     crow2 (000001D24D97B828)
+[LOG] SoundI::release                          :  (000001D26ED0B158)
+[LOG] SoundI::release                          :     crow3 (000001D24D97C388)
+[LOG] SoundI::release                          :  (000001D26ED0AFE8)
+[LOG] SoundI::release                          :     crow4 (000001D24D979948)
+[LOG] SoundI::release                          :  (000001D26ED0BB68)
+[LOG] SoundI::release                          :     pig3 (000001D24D97B4E8)
+[LOG] SoundI::release                          :  (000001D26ECFFAC8)
+[LOG] SoundI::release                          :     pig4 (000001D24D979FC8)
+[LOG] SoundI::release                          :  (000001D26ED0B718)
+[LOG] SoundI::release                          :     pig5 (000001D24D97DD88)
+[LOG] SoundI::release                          :  (000001D26ED03E58)
+[LOG] SoundI::release                          :     pig6 (000001D24D978AA8)
+[LOG] SoundI::release                          :  (000001D26ED01A68)
+[LOG] SoundI::release                          :     pig7 (000001D24D980628)
+[LOG] SoundI::release                          :  (000001D26ED0E518)
+[LOG] SoundI::release                          :     pig8 (000001D24D97C048)
+[LOG] SoundI::release                          :  (000001D26ECFF678)
+[LOG] SoundI::release                          :     pig1 (000001D24D984248)
+[LOG] SoundI::release                          :  (000001D26ED049D8)
+[LOG] SoundI::release                          :     pig2 (000001D24D97DA48)
+[LOG] SoundI::release                          :  (000001D26ED01EB8)
+[LOG] SoundI::release                          :     bar (000001D24D97CD48)
+[LOG] SoundI::release                          :  (000001D26ED02308)
+[LOG] SoundI::release                          :     fail (000001D24D97CBA8)
+[LOG] SoundI::release                          :  (000001D26ED0BCD8)
+[LOG] SoundI::release                          :     ship_moves (000001D24D97E5A8)
+[LOG] SoundI::release                          :  (000001D26ED02A38)
+[LOG] SoundI::release                          :     chick5 (000001D24D978F88)
+[LOG] SoundI::release                          :  (000001D26ED0B9F8)
+[LOG] SoundI::release                          :     chick6 (000001D24D97B688)
+[LOG] SoundI::release                          :  (000001D26ED035B8)
+[LOG] SoundI::release                          :     chick7 (000001D24D981CE8)
+[LOG] SoundI::release                          :  (000001D26ED03728)
+[LOG] SoundI::release                          :     chick8 (000001D24D984A68)
+[LOG] SoundI::release                          :  (000001D26ED04B48)
+[LOG] SoundI::release                          :     chick1 (000001D24D97D8A8)
+[LOG] SoundI::release                          :  (000001D26ED00928)
+[LOG] SoundI::release                          :     chick2 (000001D24D981668)
+[LOG] SoundI::release                          :  (000001D26ED0B5A8)
+[LOG] SoundI::release                          :     chick3 (000001D24D97B9C8)
+[LOG] SoundI::release                          :  (000001D26ED0B888)
+[LOG] SoundI::release                          :     chick4 (000001D24D97AB28)
+[LOG] SoundI::release                          :  (000001D26ED0E3A8)
+[LOG] SoundI::release                          :     horse3 (000001D24D97C868)
+[LOG] SoundI::release                          :  (000001D26ED001F8)
+[LOG] SoundI::release                          :     horse4 (000001D24D981328)
+[LOG] SoundI::release                          :  (000001D26ED00088)
+[LOG] SoundI::release                          :     horse5 (000001D24D97C528)
+[LOG] SoundI::release                          :  (000001D26ED01338)
+[LOG] SoundI::release                          :     horse6 (000001D24D97C1E8)
+[LOG] SoundI::release                          :  (000001D26ED0C298)
+[LOG] SoundI::release                          :     horse7 (000001D24D97A7E8)
+[LOG] SoundI::release                          :  (000001D26ED004D8)
+[LOG] SoundI::release                          :     horse8 (000001D24D97D228)
+[LOG] SoundI::release                          :  (000001D26ED014A8)
+[LOG] SoundI::release                          :     horse1 (000001D24D97A168)
+[LOG] SoundI::release                          :  (000001D26ED007B8)
+[LOG] SoundI::release                          :     horse2 (000001D24D981E88)
+[LOG] SoundI::release                          :  (000001D26ED0C858)
+[LOG] SoundI::release                          :     cow5 (000001D24D97AE68)
+[LOG] SoundI::release                          :  (000001D26ED02478)
+[LOG] SoundI::release                          :     cow6 (000001D24D984F48)
+[LOG] SoundI::release                          :  (000001D26ED04CB8)
+[LOG] SoundI::release                          :     cow7 (000001D24D97D568)
+[LOG] SoundI::release                          :  (000001D26ED03FC8)
+[LOG] SoundI::release                          :     cow8 (000001D24D984728)
+[LOG] SoundI::release                          :  (000001D26ED01788)
+[LOG] SoundI::release                          :     cow1 (000001D24D979C88)
+[LOG] SoundI::release                          :  (000001D26ED0B2C8)
+[LOG] SoundI::release                          :     cow2 (000001D24D97A4A8)
+[LOG] SoundI::release                          :  (000001D26ECFFC38)
+[LOG] SoundI::release                          :     cow3 (000001D24D97BEA8)
+[LOG] SoundI::release                          :  (000001D26ED04868)
+[LOG] SoundI::release                          :     cow4 (000001D24D982368)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
