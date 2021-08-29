@@ -4555,6 +4555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc828e3631cce74a815ab30458194cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   sceneID: 0
   button: {fileID: 0}
   button2: {fileID: 0}
@@ -86242,6 +86243,10 @@ PrefabInstance:
       propertyPath: hintPanelText
       value: 
       objectReference: {fileID: 7641202274065007688}
+    - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: Dicas_M1.Array.data[4]
+      value: Dont eat bacon. Eat Chicken
+      objectReference: {fileID: 0}
     - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: Dicas_M1.Array.data[6]
       value: "Hmm, Buttercup\u2019s milk has turned green again!!!"
