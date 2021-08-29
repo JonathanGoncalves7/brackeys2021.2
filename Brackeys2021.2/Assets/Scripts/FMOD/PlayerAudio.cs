@@ -7,6 +7,7 @@ public class PlayerAudio : MonoBehaviour
 {
     const string SHIP_MOVES_PATH = "event:/SFX/Gameplay/ship_moves";
     const string ABDUCTION_PATH = "event:/SFX/Gameplay/Abduction";
+    const string NO_POWER_PATH = "event:/SFX/HUD/Power Bar/no_power";
 
     [Header("Ship Moves")]
     [SerializeField] private bool isPlayingShipMoves;
@@ -16,6 +17,10 @@ public class PlayerAudio : MonoBehaviour
     [SerializeField] private bool isPlayingAbduction;
     private FMOD.Studio.EventInstance abduction;
 
+    [Header("Abduction")]
+    [SerializeField] private bool isPlayingNoPower;
+    private FMOD.Studio.EventInstance noPower;
+
     private Rigidbody playerRigibody;
     private PlayerController playerController;
 
@@ -23,6 +28,7 @@ public class PlayerAudio : MonoBehaviour
     {
         shipMoves = FMODUnity.RuntimeManager.CreateInstance(SHIP_MOVES_PATH);
         abduction = FMODUnity.RuntimeManager.CreateInstance(ABDUCTION_PATH);
+        noPower = FMODUnity.RuntimeManager.CreateInstance(NO_POWER_PATH);
 
 
         playerRigibody = GetComponent<Rigidbody>();
@@ -36,6 +42,7 @@ public class PlayerAudio : MonoBehaviour
     {
         PlayShipMoves();
         PlayAbduction();
+        PlayNoPower();
     }
 
     void PlayShipMoves()
@@ -78,6 +85,21 @@ public class PlayerAudio : MonoBehaviour
                 isPlayingAbduction = false;
             }
         }
+    }
+
+    void PlayNoPower()
+    {
+        if (Input.GetKey(KeyCode.Space) && !playerController.PermiteAbduzir() && !IsPlaying(noPower))
+        {
+            noPower.start();
+        }
+    }
+
+    public static bool IsPlaying(FMOD.Studio.EventInstance instance)
+    {
+        FMOD.Studio.PLAYBACK_STATE state;
+        instance.getPlaybackState(out state);
+        return state != FMOD.Studio.PLAYBACK_STATE.STOPPED;
     }
 
     private void OnDestroy()
