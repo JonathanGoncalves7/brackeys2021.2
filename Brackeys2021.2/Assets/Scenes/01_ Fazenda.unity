@@ -86235,9 +86235,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2568898286647973067, guid: 8a71e81829ffdba47b31f0a3e606d270, type: 3}
     - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: timeMessage
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: hintPanelText
       value: 
       objectReference: {fileID: 7641202274065007688}
+    - target: {fileID: 1215894168405819433, guid: 021d8269b4056c74997daba27d97319f, type: 3}
+      propertyPath: Dicas_M1.Array.data[6]
+      value: "Hmm, Buttercup\u2019s milk has turned green again!!!"
+      objectReference: {fileID: 0}
     - target: {fileID: 1576437000555731588, guid: 021d8269b4056c74997daba27d97319f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.4
