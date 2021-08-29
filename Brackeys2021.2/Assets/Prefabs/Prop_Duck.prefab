@@ -178,6 +178,7 @@ GameObject:
   - component: {fileID: 7869627022151618759}
   - component: {fileID: 4322263176345504545}
   - component: {fileID: 8749326848656044980}
+  - component: {fileID: -924385493310826866}
   m_Layer: 0
   m_Name: Prop_Duck
   m_TagString: Target
@@ -282,3 +283,16 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-924385493310826866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344048128891993206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7df4589fb9cd49829fa58bc05e51179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRightTarget: 0

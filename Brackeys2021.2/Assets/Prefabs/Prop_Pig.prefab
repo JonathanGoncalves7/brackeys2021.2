@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 112206840973960382}
   - component: {fileID: -5064448090836555162}
   - component: {fileID: 4810731074996007825}
+  - component: {fileID: -1770475710035398495}
   m_Layer: 0
   m_Name: Prop_Pig
   m_TagString: Target
@@ -118,6 +119,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-1770475710035398495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888321409589623752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7df4589fb9cd49829fa58bc05e51179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRightTarget: 0
 --- !u!1 &1877064207093616332
 GameObject:
   m_ObjectHideFlags: 0
