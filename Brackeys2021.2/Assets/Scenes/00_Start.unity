@@ -892,16 +892,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 480383406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc828e3631cce74a815ab30458194cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f5ee9b48deebdd348ab465725c95cc03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
-  sceneID: 1
-  button: {fileID: 868665390}
-  button2: {fileID: 83269303}
-  fadeAnimation: {fileID: 424623942}
-  fadeInClip: {fileID: 7400000, guid: 47ab80b68a30d404aa5f3fa60dfc1a72, type: 2}
-  fadeOutClip: {fileID: 7400000, guid: a7f6450456628374fb6a8d80df9301f4, type: 2}
+  _index: 1
 --- !u!65 &480383408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -913,8 +907,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.1538175}
+  m_Center: {x: 0, y: 0, z: 0.076908775}
 --- !u!23 &480383409
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8020,16 +8014,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876953268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cc828e3631cce74a815ab30458194cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f5ee9b48deebdd348ab465725c95cc03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 2
-  sceneID: 2
-  button: {fileID: 868665390}
-  button2: {fileID: 83269303}
-  fadeAnimation: {fileID: 424623942}
-  fadeInClip: {fileID: 7400000, guid: 47ab80b68a30d404aa5f3fa60dfc1a72, type: 2}
-  fadeOutClip: {fileID: 7400000, guid: a7f6450456628374fb6a8d80df9301f4, type: 2}
+  _index: 2
 --- !u!65 &1876953270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8041,8 +8029,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.4532886}
+  m_Center: {x: 0, y: 0, z: 0.22664444}
 --- !u!23 &1876953271
 MeshRenderer:
   m_ObjectHideFlags: 0

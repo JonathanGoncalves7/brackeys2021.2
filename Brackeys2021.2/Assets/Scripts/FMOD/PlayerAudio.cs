@@ -105,5 +105,7 @@ public class PlayerAudio : MonoBehaviour
     private void OnDestroy()
     {
         shipMoves.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        abduction.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        noPower.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }
