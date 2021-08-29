@@ -17,9 +17,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float abducaoPointsPerdidoPorAbducao = 0.1f;
     [SerializeField] private Slider abducaoSlider;
     [SerializeField] private Animation abducaoAnim;
+    [SerializeField] private Animation caosAnim;
 
     //private readonly string anim_abducao_idle = "anim_Abduction_Idle";
     private readonly string anim_abducao_dropping = "anim_Abduction_Using";
+
+    private readonly string anim_caos_idle = "anim_Chaos_Idle";
+    private readonly string anim_caos_total = "anim_Chaos_Total";
 
     private Rigidbody playerRB;
 
@@ -49,6 +53,19 @@ public class PlayerController : MonoBehaviour
     {
         caosSlider.value = CaosManager.Instance.GetCaosPoints();
         abducaoSlider.value = abducaoPoints;
+
+        if(caosSlider.value >= 1)
+        {
+            caosAnim.Play(anim_caos_total);
+        }
+        else
+        {
+            if(caosAnim.isPlaying)
+            {
+                caosAnim.Stop();
+                caosAnim.Play(anim_caos_idle);
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
