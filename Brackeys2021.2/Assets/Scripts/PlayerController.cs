@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
             CaosManager.Instance.AddCaosPoints(CaosManager.Instance.GetCaosPointsAdicionadoPorAbducao());
             SubAbducaoPoints(abducaoPointsPerdidoPorAbducao);
-            PlayAbducaoAnimation();           
+            PlayAbducaoAnimation();
         }
 
     }
@@ -99,5 +99,10 @@ public class PlayerController : MonoBehaviour
     public void PlayAbducaoAnimation()
     {
         abducaoAnim.Play(anim_abducao_dropping);
+    }
+
+    public bool PermiteAbduzir()
+    {
+        return (abducaoPoints - abducaoPointsPerdidoPorAbducao) >= 0;
     }
 }

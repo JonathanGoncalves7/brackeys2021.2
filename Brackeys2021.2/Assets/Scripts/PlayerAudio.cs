@@ -2,53 +2,86 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody), typeof(PlayerController))]
 public class PlayerAudio : MonoBehaviour
 {
-    [SerializeField] const string AUDIO_PATH = "event:/SFX/Gameplay/ship_moves";
+    const string SHIP_MOVES_PATH = "event:/SFX/Gameplay/ship_moves";
+    const string ABDUCTION_PATH = "event:/SFX/Gameplay/Abduction";
 
     [Header("Ship Moves")]
-    [SerializeField] private bool isPlaying;
-    private FMOD.Studio.EventInstance audioLoop;
+    [SerializeField] private bool isPlayingShipMoves;
+    private FMOD.Studio.EventInstance shipMoves;
 
-    private Rigidbody rb;
+    [Header("Abduction")]
+    [SerializeField] private bool isPlayingAbduction;
+    private FMOD.Studio.EventInstance abduction;
+
+    private Rigidbody playerRigibody;
+    private PlayerController playerController;
 
     void Start()
     {
-        audioLoop = FMODUnity.RuntimeManager.CreateInstance(AUDIO_PATH);
-        rb = GetComponent<Rigidbody>();
+        shipMoves = FMODUnity.RuntimeManager.CreateInstance(SHIP_MOVES_PATH);
+        abduction = FMODUnity.RuntimeManager.CreateInstance(ABDUCTION_PATH);
 
-        isPlaying = false;
+
+        playerRigibody = GetComponent<Rigidbody>();
+        playerController = GetComponent<PlayerController>();
+
+        isPlayingShipMoves = false;
+        isPlayingAbduction = false;
     }
 
     private void Update()
     {
         PlayShipMoves();
+        PlayAbduction();
     }
 
     void PlayShipMoves()
     {
-        if (rb.velocity.magnitude > 0)
+        if (playerRigibody.velocity.magnitude > 0)
         {
-            if (!isPlaying)
+            if (!isPlayingShipMoves)
             {
-                audioLoop.start();
-                isPlaying = true;
+                shipMoves.start();
+                isPlayingShipMoves = true;
             }
         }
         else
         {
-            if (isPlaying)
+            if (isPlayingShipMoves)
             {
 
-                audioLoop.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                isPlaying = false;
+                shipMoves.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                isPlayingShipMoves = false;
+            }
+        }
+    }
+
+    void PlayAbduction()
+    {
+        if (Input.GetKey(KeyCode.Space) && playerController.PermiteAbduzir())
+        {
+            if (!isPlayingAbduction)
+            {
+                abduction.start();
+                isPlayingAbduction = true;
+            }
+        }
+        else
+        {
+            if (isPlayingAbduction)
+            {
+
+                abduction.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                isPlayingAbduction = false;
             }
         }
     }
 
     private void OnDestroy()
     {
-        audioLoop.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        shipMoves.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }
