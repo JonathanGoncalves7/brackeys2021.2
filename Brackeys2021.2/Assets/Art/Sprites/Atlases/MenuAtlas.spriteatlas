@@ -56,7 +56,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 2b1ed34aac776de469b6dd942ffa1658, type: 3}
-    totalSpriteSurfaceArea: 347036
+    totalSpriteSurfaceArea: 494356
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -66,11 +66,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 53a2d7f23ea0a6a4792ee81a5c33e45f, type: 3}
   - {fileID: 21300000, guid: cf99b49b8594e6343835b4c3be5afef9, type: 3}
   - {fileID: 21300000, guid: 3cc3e80c2a1acb54ea94e6bbf9984b60, type: 3}
+  - {fileID: 21300000, guid: 9b2183affcaee98449326f89e4690ec0, type: 3}
   m_PackedSpriteNamesToIndex:
   - Option2
   - Option
   - Billboard
   - Start
+  - BrakeysVilleLogoV1
   m_RenderDataMap: {}
   m_Tag: MenuAtlas
   m_IsVariant: 0
