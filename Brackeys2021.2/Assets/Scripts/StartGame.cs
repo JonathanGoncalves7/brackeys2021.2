@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    [SerializeField] int index;
+
     [SerializeField] int sceneID = 0;
     [SerializeField] GameObject button;
     [SerializeField] GameObject button2;
@@ -14,11 +16,22 @@ public class StartGame : MonoBehaviour
     [SerializeField] AnimationClip fadeInClip;
     [SerializeField] AnimationClip fadeOutClip;
 
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            OnStartClick(index);
+        }
+    }
+
     public void OnStartClick(int index)
     {
-        button.SetActive(false);
-        button2.SetActive(false);
+        //    button.SetActive(false);
+        //   button2.SetActive(false);
         DontDestroyOnLoad(gameObject);
+
+        //              fadeAnimation.clip = fadeInClip;
 
         sceneID = index;
         StartCoroutine(LoadSceneAsync());
@@ -26,8 +39,8 @@ public class StartGame : MonoBehaviour
 
     IEnumerator LoadSceneAsync()
     {
-        fadeAnimation.clip = fadeInClip;
-        fadeAnimation.Play();
+        //   fadeAnimation.clip = fadeInClip;
+        //  fadeAnimation.Play();
 
         yield return new WaitForSeconds(.5f);
 
@@ -39,7 +52,7 @@ public class StartGame : MonoBehaviour
             yield return null;
         }
 
-        fadeAnimation.PlayQueued(fadeOutClip.name);
+        //  fadeAnimation.PlayQueued(fadeOutClip.name);
         Destroy(this.gameObject, 2f);
     }
 
