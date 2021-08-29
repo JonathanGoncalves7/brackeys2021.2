@@ -284,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   castingRadius: 6
+  effectAbduction: {fileID: 412277996932003663}
   raycastOrigin: {fileID: 1576437000555731588}
   currentTarget: {fileID: 0}
 --- !u!114 &1477175707690661985
